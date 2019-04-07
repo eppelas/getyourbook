@@ -1,3 +1,18 @@
+
+
+/**************
+Grid
+**************/
+
+
+
+
+/*************************
+Main Page
+**************************/
+
+/* main image block */
+
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -9,14 +24,6 @@ Main menu
 .menu
 {
 font-family: 'Roboto', sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 42px;
-	
-	text-align: right;
-    margin-top: 20px;
-	margin-right: 5%;
-
   width: 164px;
   height: 34px;
   /* font-family: Roboto; */
@@ -28,7 +35,7 @@ font-family: 'Roboto', sans-serif;
   letter-spacing: normal;
   color: #00aba6;
 
-font-family: input-sans, sans-serif;
+/* font-family: input-sans, sans-serif;
     font-weight: 400;
 	font-size: 14px;
 	line-height: 42px;
@@ -36,6 +43,7 @@ font-family: input-sans, sans-serif;
 	text-align: right;
     margin-top: 20px;
 	margin-right: 5%;
+*/
 
 }
 
