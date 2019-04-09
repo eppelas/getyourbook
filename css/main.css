@@ -65,12 +65,20 @@ a {
 	color: #D0021B;
 }
 
-#icon_cart {
+
+.img_cart_top {
+	display: none;
+	z-index: 99;
 	margin-top: -5px;
 }
 
-#icon_cart:hover {
-	
+
+.icon_cart:hover .img_cart_top {
+	display: inline-block;
+}
+
+.icon_cart:hover .img_cart_normal {
+	display: none;
 }
 
 
