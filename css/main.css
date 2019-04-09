@@ -1,9 +1,9 @@
 body {
-	height: 4205px;	
+	/*height: 4205px;	*/
 	font-family: 'Roboto', sans-serif;
-	background-height: 4205px;
+/*	background-height: 4205px;
 	background-position: top;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat; */
 }
 
 
@@ -11,19 +11,33 @@ body {
 /*	padding: 0 42px;*/
 }
 
+h1 {
+	text-align: center;
+	font-size: 50px;
+	font-weight: 500;
+}
+
+h2 {
+	text-align: center;
+	font-size: 34px;
+	font-weight: 500;
+}
+
+
+
 /********
 Main menu
 ********/
 
 .menu {
-	font-family: 'Roboto', sans-serif;
     font-weight: 400;
 	font-size: 20px;
 	line-height: 42px;
-	
 	text-align: right;
-    margin-top: 20px;
-	margin-right: 5%;	
+	position: fixed;
+	top: 20px;
+	right: 42px;
+	z-index: 100;
 }
 
 .menu li {
@@ -47,6 +61,28 @@ a {
 	color: #D0021B;
 }
 
+#icon_cart {
+	margin-top: -5px;
+}
+
+#icon_cart:hover {
+	
+}
+
+
+/*
+Side menu*/
+.side_menu {
+	text-align: left;
+	position: fixed;
+	right: 38px;
+	top: 35%;
+	list-style: none;
+	font-size: 13px;
+	line-height: 26px;
+	color: #9B9B9B;
+}
+
 
 
 /********
@@ -59,6 +95,14 @@ MAIN PAGE
 #header_main {
 	background-image: url(../img/space.png);
 	background-repeat: no-repeat; 
+	height: 600px;
+}
+
+
+/*Box Block*/
+
+.box_img {
+	margin-top: -120px;
 }
 
 
@@ -67,6 +111,16 @@ MAIN PAGE
 
 
 
+/*Reviews*/
+
+.review_name div {
+display: inline-block;
+}
+
+
+.review_name img {
+	border-radius: 50%;
+}
 
 
 
@@ -87,4 +141,12 @@ MAIN PAGE
 .footer li {
 		list-style: none;
 		padding-left: 20px;
+}
+
+
+.block_writetous {
+	background-image: url(../img/mountains.png);
+	background-repeat: no-repeat; 
+	background-position: right bottom;
+	height: 600px;
 }
