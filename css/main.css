@@ -4,6 +4,7 @@ body {
 /*	background-height: 4205px;
 	background-position: top;
 	background-repeat: no-repeat; */
+	background-color: #f0f3f7
 }
 
 
@@ -20,7 +21,10 @@ h1 {
 h2 {
 	text-align: center;
 	font-size: 34px;
-	font-weight: 500;
+	font-weight: 700;
+	padding-top: 160px;
+	padding-bottom: 40px;
+	color: #333b46;
 }
 
 
@@ -98,6 +102,35 @@ MAIN PAGE
 	height: 600px;
 }
 
+.button_main a{
+	margin-top: 12px;
+	padding: 8px 24px 10px 24px;
+  	border-radius: 40px;
+  	background-color: #d0021b;
+  	font-size: 14px;
+  	font-weight: 400;
+  	color: white;
+  	text-decoration: none;
+}
+
+.button_main {
+	margin-top: 12px;
+}
+
+.button_additional a{
+	margin-top: 17px;
+	padding: 8px 24px 10px 24px;
+  	border-radius: 40px;
+  	background-color: #D6D8DB;
+  	font-size: 14px;
+  	font-weight: 400;
+  	color: #000000;
+  	text-decoration: none;
+}
+
+.button_additional {
+	margin-top: 17px;
+}
 
 /*Box Block*/
 
@@ -122,20 +155,30 @@ display: inline-block;
 	border-radius: 50%;
 }
 
+/*Footer*/
 
+.writetous {
+	width: 301px;
+	height: 40px;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+	color: #333b46;
+}
 
+.block_writetous {
+	font-size: 20px;
+	text-align: center;
+	color: #071b35;
+}
+
+ 
 
 /*Footer*/
 
 .footer {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	font-style: medium;
 	font-size: 17px;
-	padding: 60px 0;
-	line-height: 20px;
-	text-align: left;
-	list-style: none;
+	font-weight: 500;
 }
 
 .footer li {
@@ -143,10 +186,26 @@ display: inline-block;
 		padding-left: 20px;
 }
 
-
 .block_writetous {
 	background-image: url(../img/mountains.png);
 	background-repeat: no-repeat; 
 	background-position: right bottom;
 	height: 600px;
+}
+
+.green {
+  height: 126px;
+  background-color: #009276;
+}
+
+.green li {
+  list-style: none;
+  padding-top: 30px;
+  margin-bottom: -20px;
+  color: #ffffff;
+}
+
+.icons_row img {
+	height: 50px;
+	margin: 30px 5px;
 }
