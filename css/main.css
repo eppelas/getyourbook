@@ -1,10 +1,14 @@
 body {
 	height: 4205px;	
 	font-family: 'Roboto', sans-serif;
-	background-image: url(file:///C:/Users/user/Desktop/Get_Your_Book/getyourbook/img/05Main.jpg);
 	background-height: 4205px;
 	background-position: top;
 	background-repeat: no-repeat; 
+}
+
+
+.container-fluid {
+/*	padding: 0 42px;*/
 }
 
 /********
@@ -36,12 +40,36 @@ a {
 	color: #00aba6;
 }
 .menu a:active {
-	color: #F4511E;
+	color: #D0021B;
 }
 .menu a:hover {
-	c
-	color: #F4511E;
+	text-decoration: none;
+	color: #D0021B;
 }
+
+
+
+/********
+MAIN PAGE
+*********/
+
+
+/*Header Block*/
+
+#header_main {
+	background-image: url(../img/space.png);
+	background-repeat: no-repeat; 
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Footer*/
 
