@@ -5,9 +5,10 @@
 	<title>Get Your Book</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- уточнить актуальность -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+
+
 
 		
 </head>
@@ -28,27 +29,33 @@
         </un>
     </div>
 
+
+
+
+
 <div class="container-fluid">	  
 	  <div class="row">
 	  	<div class="col-lg-12 p-0" id="header_main">
             <img src="img/logo.png">
 	  		<p id="main_description_text"> Ежемесячная подписка на коробочки с книгами и атмосферными подарками. </p>
 	  	</div>
+
+
+
 	  </div>	 
 
 		
 
 
 
-    <div class="row justify-content-center">
+  <div id="carouselControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
 
-        <div class="col-lg-1"> 
-            <img src="img/arrow_left.png">
-        </div>
-
-        <div class="col-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex flex-column justify-content-end"">
             <div class="box_img">
-               <img src="img/self-development.png"> 
+               <img src="img/mix.png" id="mix"> 
             </div>
             <div class="button_additional">
                 <a href="">Коробочки прошлых месяцев</a>
@@ -56,14 +63,190 @@
         </div>
 
 
-
-        <div class="col-lg-4"> 
-           <div>
-               <!-- The carousel indicators -->
+        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+          <div>
+             <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselIndicators" data-slide-to="5"></li>
+            </ol>
            </div>
-
-           <div>
+           <div class="box_description" >
                <p>Коробочка для книжных меломанов. Здесь может оказаться любая тематика (кроме книг на английском), а вы наверняка, откроете для себя что-нибудь новенькое.</p>
+           </div>
+           <div class="box_name">
+               <p>Микс</p>
+           </div>
+           <div class=" ">
+              <div style="display: inline-block"> <img src="img/icon_box_content.png"> 
+              </div> 
+              <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+              </div>
+           </div>
+           <div class="button_main">
+               <a href=" " id="buy_mix">Заказать</a>
+           </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="carousel-item ">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+            <div class="box_img">
+               <img src="img/fiction.png" id="fiction"> 
+            </div>
+            <div class="button_additional">
+                <a href="">Коробочки прошлых месяцев</a>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+
+          <div>
+             <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1" class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselIndicators" data-slide-to="5"></li>
+            </ol>
+           </div>
+           <div class="box_description">
+               <p>Она для тех, кто не прочь погрузиться в сотни разных миров, возникших в воображении как русских, так и иностранных авторов</p>
+           </div>
+           <div class="box_name">
+               <p>Художественная</p>
+           </div>
+           <div class=" ">
+              <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
+           </div>
+           <div class="button_main">
+               <a href=" " id="buy_fiction">Заказать</a>
+           </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="carousel-item ">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+            <div class="box_img">
+               <img src="img/non-fiction.png"> 
+            </div>
+            <div class="button_additional">
+                <a href="">Коробочки прошлых месяцев</a>
+            </div>
+        </div>
+
+        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+          <div>
+             <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2" class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselIndicators" data-slide-to="5"></li>
+            </ol>
+           </div>
+           <div class="box_description">
+               <p>Коробочка для тех, кто хочет узнать больше об окружающем нас мире, выдающихся людях, открытиях и событиях. Будет чем блеснуть в разговоре с друзьями!</p>
+           </div>
+           <div class="box_name">
+               <p>Нон-фикшн</p>
+           </div>
+           <div class=" ">
+              <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
+           </div>
+           <div class="button_main">
+               <a href=" " id="buy_non-fiction">Заказать</a>
+           </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="carousel-item ">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+            <div class="box_img">
+               <img src="img/classic.png" id="classic"> 
+            </div>
+            <div class="button_additional">
+                <a href="">Коробочки прошлых месяцев</a>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+          <div>
+             <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselIndicators" data-slide-to="3"class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselIndicators" data-slide-to="5"></li>
+            </ol>
+           </div>
+           <div class="box_description" >
+               <p>Классика - это совсем не скучно и очень разнообразно! Всегда актуальные произведения, от Набокова до Эдгара Алана По.</p>
+           </div>
+           <div class="box_name">
+               <p>Классика</p>
+           </div>
+           <div class=" ">
+              <div style="display: inline-block"> <img src="img/icon_box_content.png"> 
+              </div> 
+              <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+              </div>
+           </div>
+           <div class="button_main">
+               <a href=" " id="buy_classic">Заказать</a>
+           </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="carousel-item ">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+            <div class="box_img">
+               <img src="img/self-improvement.png" id="fiction"> 
+            </div>
+            <div class="button_additional">
+                <a href="">Коробочки прошлых месяцев</a>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+
+          <div>
+             <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselIndicators" data-slide-to="4" class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="5"></li>
+            </ol>
+           </div>
+           <div class="box_description">
+               <p>Коробочка для тех, кому необходимо немножко мотивации для покорения новых вершин.</p>
            </div>
            <div class="box_name">
                <p>Саморазвитие и мотивация</p>
@@ -72,16 +255,74 @@
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>2 000р.</p></div>
            </div>
            <div class="button_main">
-               <a href=" ">Заказать</a>
+               <a href=" " id="buy_self-improvement">Заказать</a>
            </div>
+        </div>
+      </div>
+    </div>
 
+
+    <div class="carousel-item ">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+            <div class="box_img">
+               <img src="img/english.png"> 
+            </div>
+            <div class="button_additional">
+                <a href="">Коробочки прошлых месяцев</a>
+            </div>
         </div>
 
-
-        <div class="col-lg-1"> 
-            <img src="img/arrow_right.png">
+        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+          <div>
+             <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselIndicators" data-slide-to="5" class="active"></li>
+            </ol>
+           </div>
+           <div class="box_description">
+               <p>Изучать иностранный язык по книгам приятно и полезно. В коробочке неадаптированная литература, которую мы подберем для вашего уровня.</p>
+           </div>
+           <div class="box_name">
+               <p>English Box</p>
+           </div>
+           <div class=" ">
+              <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
+           </div>
+           <div class="button_main">
+               <a href=" " id="buy_english">Заказать</a>
+           </div>
+          </div>
         </div>
     </div>
+
+
+
+    
+
+
+
+
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="img/arrow_left.png"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"><img src="img/arrow_right.png"></span>
+  </a>
+
+            
+
+
+</div>
+
+
+
 
 
 
@@ -209,11 +450,14 @@
 
 
 	</footer>
-</div>    
+</div> 
+
 
 
 	<!-- scripts -->
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 </body>
