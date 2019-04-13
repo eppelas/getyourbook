@@ -99,8 +99,8 @@ a {
 
 
 
-/*
-Side menu*/
+/*Side menu*/
+
 .side_menu {
 	text-align: left;
 	position: fixed;
@@ -116,13 +116,33 @@ Side menu*/
 .side_menu a {
 	color: #9B9B9B;
 }
+
 .side_menu a:active {
-	color: #D0021B;
+	color: #d0021B;
 }
+
 .side_menu a:hover {
 	text-decoration: none;
 	color: #D0021B;
 }
+
+.red_dot {
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+  	background-color: none;
+  	display: inline-block;
+}
+
+.side_menu a:target {
+	color: #d0021b;
+}
+
+.side_menu a:hover .red_dot {
+	background-color: #d0021b;
+}
+
+
 
 /********
 MAIN PAGE
@@ -353,7 +373,7 @@ margin-left: 10px;
 }
 
 .icons_row img {
-	height: 50px;
+	height: 30px;
 	margin: 30px 5px;
 }
 
