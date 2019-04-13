@@ -110,9 +110,19 @@ Side menu*/
 	font-size: 13px;
 	line-height: 26px;
 	color: #9B9B9B;
+	z-index: 999;
 }
 
-
+.side_menu a {
+	color: #9B9B9B;
+}
+.side_menu a:active {
+	color: #D0021B;
+}
+.side_menu a:hover {
+	text-decoration: none;
+	color: #D0021B;
+}
 
 /********
 MAIN PAGE
