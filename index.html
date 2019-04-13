@@ -8,6 +8,10 @@
 	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 
 		
@@ -96,7 +100,7 @@
               </div>
            </div>
            <div class="button_main">
-               <a href=" " id="buy_mix">Заказать</a>
+               <a href=" " id="buy_mix" data-toggle="modal" data-target="#add_to_cart">Заказать</a>
            </div>
         </div>
       </div>
@@ -106,7 +110,7 @@
 
     <div class="carousel-item ">
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+        <div class="col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/fiction.png" id="fiction"> 
             </div>
@@ -116,7 +120,7 @@
         </div>
 
 
-        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
 
           <div>
              <ol class="carousel-indicators">
@@ -138,7 +142,7 @@
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
            </div>
            <div class="button_main">
-               <a href=" " id="buy_fiction">Заказать</a>
+               <a href=" " id="buy_fiction" data-toggle="modal" data-target="#add_to_cart">Заказать</a>
            </div>
         </div>
       </div>
@@ -147,7 +151,7 @@
 
     <div class="carousel-item ">
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+        <div class="col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/non-fiction.png"> 
             </div>
@@ -156,7 +160,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
           <div>
              <ol class="carousel-indicators">
               <li data-target="#carouselIndicators" data-slide-to="0"></li>
@@ -177,7 +181,7 @@
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
            </div>
            <div class="button_main">
-               <a href=" " id="buy_non-fiction">Заказать</a>
+               <a href=" " id="buy_non-fiction" data-toggle="modal" data-target="#add_to_cart">Заказать</a>
            </div>
           </div>
         </div>
@@ -188,7 +192,7 @@
     <div class="carousel-item ">
 
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+        <div class="col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/classic.png" id="classic"> 
             </div>
@@ -198,7 +202,7 @@
         </div>
 
 
-        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
           <div>
              <ol class="carousel-indicators">
               <li data-target="#carouselIndicators" data-slide-to="0"></li>
@@ -222,7 +226,7 @@
               </div>
            </div>
            <div class="button_main">
-               <a href=" " id="buy_classic">Заказать</a>
+               <a href=" " id="buy_classic" data-toggle="modal" data-target="#add_to_cart">Заказать</a>
            </div>
         </div>
       </div>
@@ -232,7 +236,7 @@
 
     <div class="carousel-item ">
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+        <div class="col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/self-improvement.png" id="fiction"> 
             </div>
@@ -242,7 +246,7 @@
         </div>
 
 
-        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
 
           <div>
              <ol class="carousel-indicators">
@@ -264,7 +268,7 @@
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>2 000р.</p></div>
            </div>
            <div class="button_main">
-               <a href=" " id="buy_self-improvement">Заказать</a>
+               <a href=" " id="buy_self-improvement" data-toggle="modal" data-target="#add_to_cart">Заказать</a>
            </div>
         </div>
       </div>
@@ -273,7 +277,7 @@
 
     <div class="carousel-item ">
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end"">
+        <div class="col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/english.png"> 
             </div>
@@ -282,7 +286,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 d-flex flex-column justify-content-end""> 
+        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
           <div>
              <ol class="carousel-indicators">
               <li data-target="#carouselIndicators" data-slide-to="0"></li>
@@ -303,7 +307,7 @@
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
            </div>
            <div class="button_main">
-               <a href=" " id="buy_english">Заказать</a>
+               <a href=" " id="buy_english" data-toggle="modal" data-target="#add_to_cart">Заказать</a>
            </div>
           </div>
         </div>
@@ -478,10 +482,74 @@
 
 
 
+
+
+<!-- Modals -->
+
+
+
+<div class="modal fade" id="add_to_cart">
+  <div class="modal-dialog modal-dialog-" >
+
+
+    <div class="modal-content"">  
+        <div >
+          <button type="button" class="close" data-dismiss="modal" style="margin: 20px 20px 0 0;">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div>
+           <h3 class="" style="padding-top: 0px;">Саморазвитие и мотивация</h3> 
+          </div>
+          <div class="container-fluid">            
+            <div class="row ">
+              <div class="col-lg-6 offset-3 p-0">
+                <form>
+                  <div class="form-group">
+                    <label for="FormSelectLength">Подписка</label>
+                    <select class="form-control" id="FormSelectLength">
+                      <option>1 месяц</option>
+                      <option>3 месяца</option>
+                      <option>6 месяцев</option>
+                    </select>
+
+                    <label for="FormSelectFilling" style="margin-top: 20px;">Наполнение</label>
+                    <select class="form-control" id="FormSelectFilling">
+                      <option>Стандарт</option>
+                      <option>Только книги</option>
+                    </select>
+
+
+                    <label for="FormSelectAmount" style="margin-top: 20px;">Количество</label>
+                      <select class="form-control" id="FormSelectAmount">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                </form>
+                <div class="button_main" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
+                  <a href=" " >Добавить в корзину</a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>            
+
+
+
 	<!-- scripts -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 
 </body>
