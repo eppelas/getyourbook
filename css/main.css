@@ -388,9 +388,12 @@ About Us
 
 #header_aboutus {
 	background-color: #f0f3f7; 
-	height: 600px;
+	/*background-image: url(../img/bitmap-copy-4.png);
+	background-repeat: no-repeat;
+	background-position: right bottom 80%;
+	height: 164px;*/
 }
 
 .header_aboutus p {
-
+	margin-top: 60px;
 }
