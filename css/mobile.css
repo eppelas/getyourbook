@@ -1,0 +1,55 @@
+@media only screen and (max-width: 600px) {
+	.side_menu {
+		display: none;
+	}
+
+	.menu {
+		    font-size: 13px;
+		    text-align: left;
+		    right: 0;
+		        padding: 0;
+		    
+		}
+
+	.menu li {
+		padding-left: 7px;
+	}
+
+
+	.carousel-inner {
+	margin-top: -200px;
+	height: 740px;
+	}
+
+	.carousel-control-next{
+		right: 0;
+	}
+	.carousel-control-prev {
+		left: 0;
+	}
+
+	.carousel-control-next-icon img, .carousel-control-prev-icon img {
+		margin-top: 210px;
+	}
+
+	.carousel-indicators {
+		left: 0;
+		top: 0;
+	}
+
+	.box_description {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	.box_name {
+		text-align: center;
+	}
+
+	.box_content_style {
+		text-align: center;
+	}
+
+	.button_main {
+		text-align: center;
+	}
+}

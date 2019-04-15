@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mobile.css">
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -17,10 +18,13 @@
 		
 </head>
 
+
+
+
 <body id="main_page" >
 	<header>
    <div class="menu"> 
-    <un > <li><a href="index.html"> Главная </a></li> <li><a href="Delivery.html"> Доставка </a></li> <li><a href="FAQ.html"> Частые вопросы </a></li> <li><a href="AboutUs.html"> О нас </a></li> 
+    <un > <li><a href="index.html" class="active"> Главная </a></li> <li><a href="Delivery.html"> Доставка </a></li> <li><a href="FAQ.html"> Частые вопросы </a></li> <li><a href="AboutUs.html"> О нас </a></li> 
         <li class="icon_cart">
           <div style="display: inline-block;">
             <a href="cart.html" class="menu_cart"> 
@@ -58,23 +62,24 @@
 		
 
 
+<!-- d-none d-sm-block col-md-4 -->
 
 <div id="carouselControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" style="height: 500px;">
+  <div class="carousel-inner">
     <div class="carousel-item active">
 
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end">
+        <div class="d-none col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/mix.png" id="mix"> 
             </div>
-            <div class="button_additional">
+            <div class="d-none d-sm-block button_additional">
                 <a href="">Коробочки прошлых месяцев</a>
             </div>
         </div>
 
 
-        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
+        <div class="d-none col-lg-4 d-flex flex-column justify-content-end"> 
           <div>
              <ol class="carousel-indicators">
               <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -91,7 +96,7 @@
            <div class="box_name">
                <p>Микс</p>
            </div>
-           <div class=" ">
+           <div class="box_content_style ">
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> 
               </div> 
               <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
@@ -108,11 +113,11 @@
 
     <div class="carousel-item ">
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end">
+        <div class="d-none col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/fiction.png" id="fiction"> 
             </div>
-            <div class="button_additional">
+            <div class="d-none d-sm-block button_additional">
                 <a href="">Коробочки прошлых месяцев</a>
             </div>
         </div>
@@ -136,7 +141,7 @@
            <div class="box_name">
                <p>Художественная</p>
            </div>
-           <div class=" ">
+           <div class="box_content_style ">
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
            </div>
            <div class="button_main">
@@ -149,11 +154,11 @@
 
     <div class="carousel-item ">
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end">
+        <div class="d-none col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/non-fiction.png"> 
             </div>
-            <div class="button_additional">
+            <div class="d-none d-sm-block button_additional">
                 <a href="">Коробочки прошлых месяцев</a>
             </div>
         </div>
@@ -175,7 +180,7 @@
            <div class="box_name">
                <p>Нон-фикшн</p>
            </div>
-           <div class=" ">
+           <div class="box_content_style ">
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
            </div>
            <div class="button_main">
@@ -190,11 +195,11 @@
     <div class="carousel-item ">
 
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end">
+        <div class="d-none col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/classic.png" id="classic"> 
             </div>
-            <div class="button_additional">
+            <div class="d-none d-sm-block button_additional">
                 <a href="">Коробочки прошлых месяцев</a>
             </div>
         </div>
@@ -206,7 +211,7 @@
               <li data-target="#carouselIndicators" data-slide-to="0"></li>
               <li data-target="#carouselIndicators" data-slide-to="1"></li>
               <li data-target="#carouselIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselIndicators" data-slide-to="3"class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="3" class="active"></li>
               <li data-target="#carouselIndicators" data-slide-to="4"></li>
               <li data-target="#carouselIndicators" data-slide-to="5"></li>
             </ol>
@@ -217,7 +222,7 @@
            <div class="box_name">
                <p>Классика</p>
            </div>
-           <div class=" ">
+           <div class="box_content_style ">
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> 
               </div> 
               <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
@@ -234,11 +239,11 @@
 
     <div class="carousel-item ">
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end">
+        <div class="d-none col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/self-improvement.png" id="fiction"> 
             </div>
-            <div class="button_additional">
+            <div class="d-none d-sm-block button_additional">
                 <a href="">Коробочки прошлых месяцев</a>
             </div>
         </div>
@@ -262,7 +267,7 @@
            <div class="box_name">
                <p>Саморазвитие и мотивация</p>
            </div>
-           <div class=" ">
+           <div class="box_content_style">
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>2 000р.</p></div>
            </div>
            <div class="button_main">
@@ -275,18 +280,18 @@
 
     <div class="carousel-item ">
       <div class="row justify-content-center">
-        <div class="col-lg-4 d-flex flex-column justify-content-end">
+        <div class="d-none col-lg-4 d-flex flex-column justify-content-end">
             <div class="box_img">
                <img src="img/english.png"> 
             </div>
-            <div class="button_additional">
+            <div class="d-none d-sm-block button_additional">
                 <a href="">Коробочки прошлых месяцев</a>
             </div>
         </div>
 
         <div class="col-lg-4 d-flex flex-column justify-content-end"> 
           <div>
-             <ol class="carousel-indicators">
+             <ol class="carousel-indicators ">
               <li data-target="#carouselIndicators" data-slide-to="0"></li>
               <li data-target="#carouselIndicators" data-slide-to="1"></li>
               <li data-target="#carouselIndicators" data-slide-to="2"></li>
@@ -301,7 +306,7 @@
            <div class="box_name">
                <p>English Box</p>
            </div>
-           <div class=" ">
+           <div class="box_content_style">
               <div style="display: inline-block"> <img src="img/icon_box_content.png"> </div> <div class="box_price" style="display: inline-block"> <p>1 900р.</p></div>
            </div>
            <div class="button_main">
@@ -328,27 +333,29 @@
 
 
 
+
+
       
   <h1 id="price"> Сколько стоит? </h1>
 
       <div class="row block_prices">
 
-          <div class="col-2 offset-2">
-              <img src="">
-              <p class="months">1 <br>месяц</p>
+          <div class="col-lg-2 offset-2">
+              <img src="img/2.png" class="months_books">
+              <p class="months">1 месяц</p>
               <p class="price"> 2 000р </p>
               <p class="month_price"> (2 000р/мес)</p>
           </div>
 
-          <div class="col-2 offset-1">
-              <img src="">
-              <p class="months">3 <br> месяца</p>
+          <div class="col-lg-2 offset-1">
+              <img src="img/6.png" class="months_books">
+              <p class="months">3  месяца</p>
               <p class="price"> 5 400р </p>
               <p class="month_price"> (1 800р/мес)</p>
           </div>
-          <div class="col-2 offset-1">
-              <img src="">
-              <p class="months">6 <br> месяцев</p>
+          <div class="col-lg-2 offset-1">
+              <img src="img/12.png" class="months_books">
+              <p class="months">6 месяцев</p>
               <p class="price"> 9 600р </p>
               <p class="month_price"> (1 600р/мес)</p>
           </div>
@@ -420,7 +427,7 @@
 
     <div class="row justify-content-center">
         <div class="col-4">
-            <div class="form-group">
+            <div class="form-group" style="margin-bottom: 30px;">
               <label for="InputName">Имя</label>
               <input type="  " class="form-control" id="InputName" placeholder="Имя">
             </div>
