@@ -154,6 +154,7 @@ MAIN PAGE
 	background-image: url(../img/space.png);
 	background-repeat: no-repeat; 
 	height: 600px;
+	text-align: center;
 }
 
 #main_description_text {
@@ -203,6 +204,7 @@ MAIN PAGE
 
 .carousel-inner {
 	margin-top: -120px;
+	height: 500px;
 }
 
 

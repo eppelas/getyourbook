@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
 	.side_menu {
 		display: none;
 	}
@@ -7,7 +7,7 @@
 		    font-size: 13px;
 		    text-align: left;
 		    right: 0;
-		        padding: 0;
+		     padding: 0;
 		    
 		}
 
@@ -52,4 +52,42 @@
 	.button_main {
 		text-align: center;
 	}
+
+
+	h1 {
+		margin: 40px 0 25px 0;
+		    font-size: 40px;
+	}
+
+	.block_prices {
+		text-align: center;
+	}
+
+	.green div {
+		margin-left: 0 !important;
+		font-weight: 400;
+	}
+
+	.green li {
+		padding-top: 14px;
+		margin-bottom: 0;
+	}
 }
+
+
+
+
+@media only screen and (min-width: 1024px) {
+#header_main {
+	background-size: 84%;
+	/*height: 100%;*/
+}
+
+.carousel-indicators {
+	top: 160px;
+	left: -70%;
+}
+
+}
+
+
