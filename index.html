@@ -12,7 +12,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <script src="js/nav.js"></script>
 
 
 		
@@ -21,10 +21,30 @@
 
 
 
-<body id="main_page" >
+<body id="main_page">
 	<header>
    <div class="menu"> 
-    <un > <li><a href="index.html" class="active"> Главная </a></li> <li><a href="FAQ.html"> Доставка </a></li> <li><a href="FAQ.html"> Частые вопросы </a></li> <li><a href="AboutUs.html"> О нас </a></li> 
+    <un > 
+      <li>
+        <a href="index.html" class="active"> 
+          Главная 
+        </a>
+      </li> 
+      <li>
+        <a href="FAQ.html"> 
+          Доставка 
+        </a>
+      </li> 
+      <li>
+        <a href="FAQ.html"> 
+          Частые вопросы 
+        </a>
+      </li> 
+      <li>
+        <a href="AboutUs.html"> 
+          О нас 
+        </a>
+      </li> 
         <li class="icon_cart">
           <div style="display: inline-block;">
             <a href="cart.html" class="menu_cart"> 
@@ -40,11 +60,46 @@
     </div>
 	</header>
 
-
-    <div class="side_menu">
-        <un> <li><a href="#carouselControls"> <div class="red_dot"></div> Коробочки </a></li> <li><a href="#price"> <div class="red_dot"></div> Стоимость </a></li> <li><a href="#howtoorder"> <div class="red_dot"></div> Как заказать </a></li> <li><a href="#reviews"> <div class="red_dot"></div> Отзывы </a></li> <li><a href="#discount"> <div class="red_dot"></div> Скидка </a></li> <li><a href="#contacts"> <div class="red_dot"></div> Контакты </a></li>
+    <nav class="side_menu">
+        <un> 
+          <li>
+            <a href="#boxes"> 
+              <div class="red_dot"></div> 
+              Коробочки 
+            </a>
+          </li> 
+          <li>
+            <a href="#prices"> 
+              <div class="red_dot"></div> 
+              Стоимость 
+            </a>
+          </li> 
+          <li>
+            <a href="#order"> 
+              <div class="red_dot"></div> 
+              Как заказать 
+            </a>
+          </li> 
+          <li>
+            <a href="#reviews"> 
+              <div class="red_dot"></div> 
+              Отзывы 
+            </a>
+          </li> 
+          <li>
+            <a href="#discount"> 
+              <div class="red_dot"></div> 
+              Скидка 
+            </a>
+          </li> 
+          <li>
+            <a href="#contacts"> 
+              <div class="red_dot"></div> 
+              Контакты 
+            </a>
+          </li>
         </un>
-    </div>
+    </nav>
 
 
 
@@ -62,9 +117,7 @@
 		
 
 
-<!-- d-none d-sm-block col-md-4 -->
-
-<div id="carouselControls" class="carousel slide" data-ride="carousel">
+<div id="boxes" class="carousel slide nav" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
 
@@ -316,8 +369,6 @@
         </div>
     </div>
 
-
-
   <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"><img src="img/arrow_left.png"></span>
   </a>
@@ -335,8 +386,8 @@
 
 
 
-      
-  <h1 id="price"> Сколько стоит? </h1>
+<section id="prices" class="nav">   
+  <h1 > Сколько стоит? </h1> </section> 
 
       <div class="row block_prices">
 
@@ -361,9 +412,10 @@
           </div>
         
       </div>
+ 
 
-
-  <h1 id="howtoorder">Как заказать?</h1>
+<section id="order" class="nav">
+  <h1 >Как заказать?</h1> </section>  
 
 
     <div class="row " >
@@ -387,9 +439,10 @@
         <div class="col-lg-1">
         </div> 
     </div>
+  
 
-
-    <h1 id="reviews">Отзывы</h1>
+<section id="reviews" class="nav">
+  <h1 id="reviews">Отзывы</h1> </section>
       
     <div class="row justify-content-center">
         <div class="col-md-5">
@@ -408,23 +461,18 @@
               И даже то, что, к сожалению, возникли проблемы со службой доставки, сделало момент получения посылки ещё более волнительным и приятным😍 <br> Спасибо Вам огромное, @get_your_book за то, что дарите такие тёплые эмоции, интересные книги и приятные подарочки❤️ </p>
             </div>
         </div>
-    </div>  
+  </div>  
 
     
 
 
-
-    <div class="row justify-content-center">
+   <div class="row justify-content-center">
         <div class="col-md-8">   
-            <h3 id="discount"> Получи скидку 7% на следующую покупку и будь в курсе наших новостей! </h3>
+          <section id="discount" class="nav"> 
+            <h3> Получи скидку 7% на следующую покупку и будь в курсе наших новостей! </h3>
+          </section>
         </div> 
     </div>
-
-
-
-
-
-
     <div class="row justify-content-center">
         <div class="col-10 col-md-4 col-lg-3">
             <div class="form-group" style="margin-bottom: 30px;">
@@ -441,22 +489,32 @@
                 Согласие с пользовательским соглашением
               </label>
             </div>
-            <div class="button_main" style="text-align: center; margin-top: 30px"> 
+        <section id="contacts" class="nav">    
+            <div class="button_main" style="text-align: center; margin-top: 30px; width: 100%;"> 
               <a href="" id="contacts_send"> 
                 Отправить 
               </a>
             </div>
+
+        </section>    
         </div>
     </div>
+
+
+
+
+
+
 
 
 		 
 
 	<footer class="footer">
 
-        
+    
+      <h2 > Напишите нам! </h2>
+   <!--  </section>  -->
 
-        <h2 id="contacts"> Напишите нам! </h2>
 
         <div class="row justify-content-center block_writetous"> 
 
@@ -467,6 +525,7 @@
               <a href="https://www.facebook.com/getyourbook1/"><img src="img/fb.png"></a> <a href="http://vk.com/getyourbook"><img src="img/vk.png"></a> <a href="https://instagram.com/get_your_book"><img src="img/ig.png"></a> </div>
           </div> 
         </div>
+
 
 
         <div class="row green">
@@ -480,9 +539,10 @@
             </div>
 
         </div>
-
-
 	</footer>
+
+ 
+
 </div> 
 
 
@@ -494,7 +554,7 @@
 
 
 <div class="modal fade" id="add_to_cart">
-  <div class="modal-dialog modal-dialog-" >
+  <div class="modal-dialog modal-dialog-centered" >
 
 
     <div class="modal-content">  

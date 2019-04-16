@@ -16,6 +16,10 @@
 	}
 
 
+	.menu img {
+		display: none;
+	}
+
 	.carousel-inner {
 	margin-top: -200px;
 	height: 740px;
@@ -71,6 +75,10 @@
 	.green li {
 		padding-top: 14px;
 		margin-bottom: 0;
+	}
+
+	.block_about_picture {
+		background: none;
 	}
 }
 
