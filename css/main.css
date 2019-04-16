@@ -154,6 +154,7 @@ MAIN PAGE
 	background-image: url(../img/space.png);
 	background-repeat: no-repeat; 
 	height: 600px;
+
 	text-align: center;
 }
 
@@ -302,6 +303,9 @@ font-size: 20px;
 }
 
 
+.block_prices {
+	text-align: center;
+}
 .block_prices p {
 	margin: 0;
 }
@@ -428,4 +432,26 @@ About Us
 }
 
 
+
+
+
+/*********
+Page FAQ
+*********/
+
+.collapse p {
+	max-width: 1100px;
+/*	font-size: 17px;*/
+}
+
+.clickable {
+	background-color: #D0021B;
+	color: #fff;
+}
+
+/*.show {
+	background-color: #f0f3f7;
+	border: 0px;
+	border-color: #f0f3f7;
+}*/
 
