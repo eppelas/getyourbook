@@ -23,13 +23,23 @@
 	.carousel-inner {
 	margin-top: -200px;
 	height: 740px;
+	text-align: center;
+	}
+
+	#boxes {
+		    text-align: center;
+	}
+	.box_img {
+		width: 100%;
 	}
 
 	.carousel-control-next{
 		right: 0;
+		height: 50%;
 	}
 	.carousel-control-prev {
 		left: 0;
+		height: 50%;
 	}
 
 	.carousel-control-next-icon img, .carousel-control-prev-icon img {

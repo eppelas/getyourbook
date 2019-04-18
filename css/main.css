@@ -161,8 +161,8 @@ MAIN PAGE
 #header_main {
 	background-image: url(../img/space.png);
 	background-repeat: no-repeat; 
-	height: 600px;
-
+	/*height: 600px;*/
+	height: 100vh;
 	text-align: center;
 }
 
@@ -186,10 +186,12 @@ MAIN PAGE
   	color: #fff;
   	text-decoration: none;
   	display: inline-block;
+
 }
 
 .button_main {
 	margin-top: 12px;
+	cursor: pointer;
 }
 
 .button_additional a{
@@ -202,17 +204,20 @@ MAIN PAGE
   	color: #000000;
   	text-decoration: none;
   	display: inline-block;
+
 }
 
 .button_additional {
 	margin-top: 17px;
+	cursor: pointer;
+	text-align: center;
 }
 
 
 /*Box Block*/
 
 .carousel-inner {
-	margin-top: -120px;
+	margin-top: -20%;
 	height: 500px;
 }
 
@@ -463,6 +468,7 @@ Page FAQ
 .clickable {
 	background-color: #D0021B;
 	color: #fff;
+	cursor: pointer;
 }
 
 /*.show {
