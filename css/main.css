@@ -477,13 +477,12 @@ Page FAQ
 	border-color: #f0f3f7;
 }*/
 
+/*********
+Page Boxes
+*********/
 
-
-
-section{
+.picture_page img {
+	height: auto;
 	width: 100%;
 }
-
-
-
 
