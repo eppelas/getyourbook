@@ -475,7 +475,8 @@ Page FAQ
 Page Boxes
 *********/
 
-/*.picture_page img {
-	height: 500px;
-}*/
+.picture_page img {
+	height: auto;
+	width: 100%;
+}
 
