@@ -1,0 +1,41 @@
+image: gradle:jdk11-slim
+
+stages:
+  - build-image
+  - deploy
+
+docker-build:
+  image: docker:stable
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+  before_script:
+    - "docker login --username $REGISTRY_USER --password $REGISTRY_PASSWORD $REGISTRY_URL"
+  stage: build-image
+  script:
+    - "docker build -t $REGISTRY_URL/$REGISTRY_ID/getyourbook-ui:latest ."
+    - "docker push $REGISTRY_URL/$REGISTRY_ID/getyourbook-ui:latest"
+
+deploy-to-stage:
+  stage: deploy
+  image: docker:stable
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_HOST: tcp://$SWARM_MANAGER_IP:2376
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "certs"
+  script:
+    - mkdir -p $DOCKER_CERT_PATH
+    - echo "$TLSCACERT" > $DOCKER_CERT_PATH/ca.pem
+    - echo "$TLSCERT" > $DOCKER_CERT_PATH/cert.pem
+    - echo "$TLSKEY" > $DOCKER_CERT_PATH/key.pem
+    - "docker login --username $REGISTRY_USER --password $REGISTRY_PASSWORD $REGISTRY_URL"
+    - docker stack deploy -c docker-compose.yml stage --with-registry-auth
+    - rm -rf $DOCKER_CERT_PATH
+  only:
+    - master
+  tags:
+    - docker
