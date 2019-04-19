@@ -406,6 +406,16 @@ margin-left: 10px;
 		padding-left: 20px;
 }
 
+.footer a {
+	color: #ffffff;
+}
+.footer a.active {
+	color: #D0021B;
+}
+.footer a:hover {
+	text-decoration: none;
+	color: #D0021B;
+}
 
 .green {
   height: 126px;
@@ -467,7 +477,7 @@ Page FAQ
 
 
 .clickable {
-	background-color: #D0021B;
+	background-color: #ff9999;
 	color: #fff;
 	cursor: pointer;
 }
