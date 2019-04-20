@@ -102,6 +102,11 @@ a {
 	display: none;
 }
 
+.icon_cart img{
+	width: 23px;
+}
+
+
 
 
 /*Side menu*/
@@ -162,9 +167,10 @@ MAIN PAGE
 	background-image: url(../img/space.png);
 	background-repeat: no-repeat; 
 	
-	/*height: 600px;*/
+	height: 600px;
 	/*height: 60vh;*/
 	text-align: center;
+
 }
 
 #main_description_text {
@@ -244,9 +250,9 @@ MAIN PAGE
 }
 
 .carousel-indicators {
-	position: absolute;
-	top: 110px;
-	left: -200px;
+	position: inherit;
+	/*top: 110px;
+	left: -200px;*/
 	margin: 0;
 	display: inline-flex;
 	height: 12px;
@@ -415,7 +421,7 @@ margin-left: 10px;
 }
 .footer a:hover {
 	text-decoration: none;
-	color: #ff9999;
+	color: #DBDBDB;
 }
 
 .green {
@@ -457,7 +463,7 @@ About Us
 }
 
 .about_text {
-	margin: 100px 20px 0px 20px;
+	margin: 80px 20px 0px 20px;
 }
 
 
@@ -478,8 +484,8 @@ Page FAQ
 
 
 .clickable {
-	background-color: #ff9999;
-	color: #686869;
+	background-color: #FFADA3;
+	color: #5E5E5E;
 	cursor: pointer;
 }
 
