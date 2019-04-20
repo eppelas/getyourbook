@@ -161,9 +161,9 @@ MAIN PAGE
 #header_main {
 	background-image: url(../img/space.png);
 	background-repeat: no-repeat; 
-	background-size: contain;
+	
 	/*height: 600px;*/
-	height: 60vh;
+	/*height: 60vh;*/
 	text-align: center;
 }
 
@@ -387,10 +387,6 @@ margin-left: 10px;
 	font-size: 20px;
 	text-align: center;
 	color: #071b35;
-	background-image: url(../img/mountains.png);
-	background-repeat: no-repeat; 
-	background-position: right bottom;
-	background-size: 70%;
 	/*height: 560px;*/
 	padding-bottom: 20%;
 }
@@ -399,6 +395,11 @@ margin-left: 10px;
 .footer {
 	font-size: 17px;
 	font-weight: 500;
+	background-image: url(../img/mountains.png);
+	background-repeat: no-repeat; 
+	background-position: right bottom;
+	background-size: 95%;
+	width: 100vw;
 }
 
 .footer li {

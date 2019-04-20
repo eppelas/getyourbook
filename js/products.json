@@ -1,0 +1,298 @@
+{  
+   "boxes":[  
+      {  
+         "id":"fiction",
+         "name":"Художественная",
+         "subscriptions":[  
+            {  
+               "id":"p1pm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":900,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1pm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":2550,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1pm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":4800,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1gm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":1900,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p1gm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":5250,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p1gm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":9600,
+               "boxType":"gift"
+            }
+         ],
+         "face_price":900
+      },
+      {  
+         "id":"mix",
+         "name":"Микс",
+         "subscriptions":[  
+            {  
+               "id":"p1pm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":900,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1pm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":2550,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1pm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":4800,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1gm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":1900,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p1gm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":5250,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p1gm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":9600,
+               "boxType":"gift"
+            }
+         ],
+         "face_price":900
+      },
+      {  
+         "id":"classic",
+         "name":"Классика",
+         "subscriptions":[  
+            {  
+               "id":"p1pm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":900,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1pm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":2550,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1pm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":4800,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1gm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":1900,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p1gm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":5250,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p1gm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":9600,
+               "boxType":"gift"
+            }
+         ],
+         "face_price":900
+      },
+      {  
+         "id":"non-fiction",
+         "name":"Нон-фикшн",
+         "subscriptions":[  
+            {  
+               "id":"p1pm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":900,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1pm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":2550,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1pm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":4800,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p1gm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":1900,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p1gm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":5250,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p1gm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":9600,
+               "boxType":"gift"
+            }
+         ],
+         "face_price":900
+      },
+      {  
+         "id":"english",
+         "name":"English Box",
+         "subscriptions":[  
+            {  
+               "id":"p2pm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":1000,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p2pm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":2850,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p2pm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":5400,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p2gm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":2000,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p2gm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":5550,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p2gm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":10200,
+               "boxType":"gift"
+            }
+         ],
+         "face_price":1000
+      },
+      {  
+         "id":"self-improvement",
+         "name":"Саморазвитие и мотивация",
+         "subscriptions":[  
+            {  
+               "id":"p2pm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":1000,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p2pm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":2850,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p2pm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":5400,
+               "boxType":"plain"
+            },
+            {  
+               "id":"p2gm1",
+               "name":"1 месяц",
+               "months":1,
+               "price":2000,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p2gm3",
+               "name":"3 месяца",
+               "months":3,
+               "price":5550,
+               "boxType":"gift"
+            },
+            {  
+               "id":"p2gm6",
+               "name":"6 месяцев",
+               "months":6,
+               "price":10200,
+               "boxType":"gift"
+            }
+         ],
+         "face_price":1000
+      }
+   ]
+}
