@@ -2,7 +2,7 @@ version: '3.2'
 services:
   gyb_ui:
     container_name: gyb_ui
-    image: cr.yandex/crpc5h85i43ube5u6doi/gyb_ui:latest
+    image: cr.yandex/crpc5h85i43ube5u6doi/gyb_ui:${CI_COMMIT_SHA}
     ports:
       - "80:80"
     restart: always
