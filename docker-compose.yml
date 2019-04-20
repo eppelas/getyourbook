@@ -1,0 +1,8 @@
+version: '3.2'
+services:
+    getyourbook-ui:
+      container_name: getyourbook-ui
+      image: cr.yandex/crpc5h85i43ube5u6doi/getyourbook-ui:latest
+      ports:
+        - "80:80"
+      restart: always
