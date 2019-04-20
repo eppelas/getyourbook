@@ -14,8 +14,9 @@ docker-build:
     - "docker login --username $REGISTRY_USER --password $REGISTRY_PASSWORD $REGISTRY_URL"
   stage: build-image
   script:
-    - "docker build -t $REGISTRY_URL/$REGISTRY_ID/gyb_ui:$CI_COMMIT_SHA ."
+    - "docker build --tag $REGISTRY_URL/$REGISTRY_ID/gyb_ui:$CI_COMMIT_SHA --tag $REGISTRY_URL/$REGISTRY_ID/gyb_ui:latest ."
     - "docker push $REGISTRY_URL/$REGISTRY_ID/gyb_ui:$CI_COMMIT_SHA"
+    - "docker push $REGISTRY_URL/$REGISTRY_ID/gyb_ui:latest"
 
 deploy-to-stage:
   stage: deploy
