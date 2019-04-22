@@ -22,7 +22,7 @@
 <body id="cart_page" >
 	<header>
    <div class="menu"> 
-    <img src="img/logo.png" style="height: 40px; position: absolute; left: 75px;">
+    <img class="logo d-none d-sm-block" src="img/logo.png">
     <un > <li><a href="index.html"> Главная </a></li> <li><a href="FAQ.html"> Доставка </a></li> <li><a href="FAQ.html"> Частые вопросы </a></li> <li><a href="AboutUs.html"> О нас </a></li> 
         <li class="icon_cart">
           <div style="display: inline-block;">
@@ -50,9 +50,9 @@
 
 
 
-  <div class="col-10 offset-1">
 
-    <table>
+<div class="row justify-content-center">
+    <table class="col-lg-8 ">
       <thead>
       <tr>
         <th></th>
@@ -64,92 +64,32 @@
       </thead>
       <tbody class="cart-vals"></tbody>
     </table>
-  </div>
+ 
+</div>
 
 
 
+<div class="row justify-content-center" style="margin-top: 50px;">
+            <div class="form-group col-md-5" >
+              <label for="Comment">Комментарий</label>
+              <input type="  " class="form-control" id="Comment" placeholder="Комментарий">
+            </div>
+            <div class="form-group col-md-3 col-lg-2">
+              <label for="PromoCode">Промо-код</label>
+              <input type=" " class="form-control" id="PromoCode" placeholder="Промо-код">
+            </div>
+</div>
 
 
-
-  <!-- <div id="products">
-    <div class="odd_bkg col-10 offset-1">
-      <div class="row cart_element_odd">
-      
-
-        <div class="col-4 offset-1 d-flex flex-column justify-content-center">
-          <p>Саморазвитие и мотивация</p>
-          <div class="user_choices">
-            <p class="choice_name">Подписка:</p> 
-            <p>3 месяца</p>
-          </div>
-          <div class="user_choices">
-            <p class="choice_name">Наполнение:</p> 
-            <p>Только книги</p>
-          </div>
-        </div>
-        
-        <div class="col-1 offset-2 d-flex flex-column justify-content-center">
-          <p>2000</p>
-        </div>
-        <div class="col-1 d-flex flex-column justify-content-center">
-          <div>
-            <p>1</p>
-          </div>
-        </div>
-        <div class="col-1 d-flex flex-column justify-content-center">
-          <p>2000</p>
-        </div>
-        <div class="col-1 d-flex flex-column justify-content-center">
-          <a href=""> 
-            <img src="img/icon_delete.png" style="margin-top: -24px;">
-          </a>
-        </div>
-
-      </div>
-
-   </div>
-
-
-     <div class="even_bkg col-10 offset-1">
-      <div class="row cart_element_even">
-      
-
-        <div class="col-4 offset-1 d-flex flex-column justify-content-center">
-          <p>Саморазвитие и мотивация</p>
-          <div class="user_choices">
-            <p class="choice_name">Подписка:</p> 
-            <p>3 месяца</p>
-          </div>
-          <div class="user_choices">
-            <p class="choice_name">Наполнение:</p> 
-            <p>Только книги</p>
-          </div>
-        </div>
-        
-        <div class="col-1 offset-2 d-flex flex-column justify-content-center">
-          <p>2000</p>
-        </div>
-        <div class="col-1 d-flex flex-column justify-content-center">
-          <div>
-            <p>1</p>
-          </div>
-        </div>
-        <div class="col-1 d-flex flex-column justify-content-center">
-          <p>2000</p>
-        </div>
-        <div class="col-1 d-flex flex-column justify-content-center">
-          <a href="index.html"> 
-            <img src="img/icon_delete.png" style="margin-top: -24px;">
-          </a>
-        </div>
-
-      </div> 
-  </div>  
-</div> -->
-
-
-
-
+<div class="row ">
+  <div class="col-3 offset-md-7 total_price_box">
+    <p> Итого: </p> <p class="total_price"> </p>
+    <div class="button_main" style="text-align: center; margin-top: 30px; "> 
+              <a href="" id=""> 
+                Оформить заказ 
+              </a>
+            </div>
+</div>  
 
 
 
@@ -158,7 +98,6 @@
         
 
         <h2 id="contacts"> Напишите нам! </h2>
-
         <div class="row justify-content-center block_writetous"> 
 
           <div class="col-6 p-0"> 

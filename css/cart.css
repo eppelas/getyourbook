@@ -1,24 +1,57 @@
 
 
-.cart_element_odd p,
-.cart_element_even p{
+table p{
 	font-size: 16px;
-
 }
 
-.cart_element_odd, .cart_element_even {
+
+
+.product {
 	height: 150px;
-	padding-top: 15px;
+	margin-bottom: 10px;
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.25);
+	background-color: #F7F7F7;
 }
 
-.user_choices p {
+.product_name {
+	font-weight: 500;
+}
+
+.description {
+padding: 30px 0 30px 35px;
+width: 40%;
+}
+
+
+
+.user_choices {
 	display: inline-block;
 }
 
 .choice_name {
 	color: #9B9B9B;
+	display: inline-block;
+
 }
+
+
+ thead, .cart_price, .quantity, .total, .remove {
+	text-align: center;
+
+}
+
+  th {
+	padding-bottom: 10px;
+}
+
+
+.total_price_box p {
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #333b46;
+}
+
 
 
 .odd_bkg {
@@ -28,16 +61,7 @@
 
 }
 
-.even_bkg {
-	height: 150px;
-	/*width: 80%; */
-	background-color: #F7F7F7;
-}
 
-
-.cart_element_odd:hover p {
-display: none;
-}
 
 .cart_cols {
 	margin: 0;
