@@ -103,17 +103,29 @@
 
 
 
+/*and (max-width: 1400px)*/
 
-
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px)  {
 	#header_main {
-		background-size: 77%;
-		height: 700px;
+		background-size: contain;
+		height: 750px;
 	}
 
-	/*.carousel-inner {
-		margin-top: -18%;
-	}*/
+	.carousel-inner {
+		margin-top: -15%;
+	}
+}
+
+
+@media only screen and (min-width: 1480px)  {
+	#header_main {
+		background-size: contain;
+		height: 83vh;
+	}
+
+	.carousel-inner {
+		margin-top: -15%;
+	}
 }
 
 
@@ -124,13 +136,5 @@
 		height: 700px;
 	}
 
-/*	.carousel-inner {
-		margin-top: -20%;
-	}
-*/
 
-	/*.carousel-indicators {
-	top: 30%;
-	left: -60%;
-}*/
 

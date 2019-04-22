@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="utf-8">
-	<title>Get Your Book</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
+  <meta charset="utf-8">
+  <title>Get Your Book</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+   crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
 
- <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous">
+  </script>
+
 </head>
 
 
@@ -27,21 +34,22 @@
 
 
 
-<div class="container-fluid"> 
+  <div class="container-fluid">
 
-  <div class="row justify-content-center">
-      
+    <div class="row justify-content-center">
 
-        <div class="d-none col-lg-4 d-flex flex-column justify-content-end"> 
-         
-           <div id="box_description_anchor" class="box_description" >
-               <p>Коробочка для книжных меломанов. Здесь может оказаться любая тематика (кроме книг на английском), а вы наверняка, откроете для себя что-нибудь новенькое.</p>
-           </div>
-           <div class="box_name">
-               <p>Микс</p>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_content.png"> 
+
+      <div class="d-none col-lg-4 d-flex flex-column justify-content-end">
+
+        <div id="box_description_anchor" class="box_description">
+          <p>Коробочка для книжных меломанов. Здесь может оказаться любая тематика (кроме книг на английском), а вы наверняка,
+            откроете для себя что-нибудь новенькое.</p>
+        </div>
+        <div class="box_name">
+          <p>Микс</p>
+        </div>
+        <div class="box_content_style ">
+          <div style="display: inline-block"> <img src="img/icon_box_content.png"> 
               </div> 
               <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
               </div>
@@ -65,28 +73,31 @@
             <div class="row ">
               <div class="col-lg-6 offset-3 p-0">
                 <form>
+
+                  <input type="hidden" name="product" value="fiction">
+
                   <div class="form-group">
                     <label for="FormSelectLength">Подписка</label>
-                    <select class="form-control" id="FormSelectLength">
-                      <option>1 месяц</option>
-                      <option>3 месяца</option>
-                      <option>6 месяцев</option>
+                    <select class="form-control" id="FormSelectLength" name="months">
+                      <option value="1">1 месяц</option>
+                      <option value="3">3 месяца</option>
+                      <option value="6">6 месяцев</option>
                     </select>
 
-                    <label for="FormSelectFilling" style="margin-top: 20px;">Наполнение</label>
-                    <select class="form-control" id="FormSelectFilling">
-                      <option>Стандарт</option>
-                      <option>Только книги</option>
+                    <label for="FormSelectFilling" style="margin-top: 20px;" >Наполнение</label>
+                    <select class="form-control" id="FormSelectFilling" name="boxType">
+                      <option value="g">Стандарт</option>
+                      <option value="p">Только книги</option>
                     </select>
 
 
-                    <label for="FormSelectAmount" style="margin-top: 20px;">Количество</label>
-                      <select class="form-control" id="FormSelectAmount">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <label for="FormSelectAmount" style="margin-top: 20px;" >Количество</label>
+                      <select class="form-control" id="FormSelectAmount" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                         <option>6</option>
                         <option>7</option>
                         <option>8</option>
@@ -116,17 +127,19 @@
 
 
  <div class="col-10 offset-1">
-    <div class="row cart_cols">
-      <div class="col-1 offset-7">
-        <p>Цена</p>
-      </div>
-      <div class="col-1">
-        <p>Кол-во</p>
-      </div>
-      <div class="col-1">
-        <p>Итого</p>
-      </div>
-    </div>
+
+    <table>
+      <thead>
+      <tr>
+        <th></th>
+        <th>Цена</th>
+        <th>Кол-во</th>
+        <th>Итого</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody class="cart-vals"></tbody>
+    </table>
   </div>
 
 

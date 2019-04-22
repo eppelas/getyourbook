@@ -14,12 +14,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script src="js/store.js"></script>
+  
 
 		
 </head>
 
-<body id="main_page" >
+<body id="cart_page" >
 	<header>
    <div class="menu"> 
     <img src="img/logo.png" style="height: 40px; position: absolute; left: 75px;">
@@ -45,25 +45,33 @@
 
 <div class="container-fluid"> 
 
+
+
+
+
+
   <div class="col-10 offset-1">
-    <div class="row cart_cols">
-      <div class="col-1 offset-7">
-        <p>Цена</p>
-      </div>
-      <div class="col-1">
-        <p>Кол-во</p>
-      </div>
-      <div class="col-1">
-        <p>Итого</p>
-      </div>
-    </div>
+
+    <table>
+      <thead>
+      <tr>
+        <th></th>
+        <th>Цена</th>
+        <th>Кол-во</th>
+        <th>Итого</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody class="cart-vals"></tbody>
+    </table>
   </div>
 
 
 
 
 
-  <div id="products">
+
+  <!-- <div id="products">
     <div class="odd_bkg col-10 offset-1">
       <div class="row cart_element_odd">
       
@@ -137,14 +145,10 @@
 
       </div> 
   </div>  
-</div>
+</div> -->
 
 
 
-
-<div id="cart">
-  
-</div>
 
 
 
@@ -251,7 +255,7 @@
 
 
 	<!-- scripts -->
-
+<script src="js/cart.js"></script>
 
 
 </body>
