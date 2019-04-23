@@ -1,13 +1,7 @@
 $(function() {
 
   var data = {
-     "cart": [
-
-        ["fiction", "p1pm1", 1],
-        ["mix", "p1pm3", 1],
-        ["fiction", "p1pm6", 3]
-     ],   
-     
+      
 
      "boxes":{  
         "fiction":{  
@@ -260,8 +254,7 @@ $(function() {
    };
 
 
-
-  /*
+/*  
   function getProducts(success, failure){
       //request the list of products from the "server"
       const URL = "https://github.com/eppelas/getyourbook/blob/master/js/products.json";
@@ -272,17 +265,15 @@ $(function() {
       //turns json to js method
       .then(response=>response.json())
       .then(success)
-      /*.then(showProducts)
+      .then(showProducts)
 
       .catch(failure);
 
       .catch(err=>{
           errorMessage(err.message);
       });
-  };
-  */
-
-  /*alert(cart);*/
+  };*/
+  
 
 
   Storage.prototype.setObject = function(key, value) {
@@ -295,7 +286,19 @@ $(function() {
   }
 
 
+  function updateCartItemsCount() {
+    var cur_cart = localStorage.getObject('cart');
+    if ( cur_cart && cur_cart.length && cur_cart.length > 0 ) {
+      $('.cart-cont-num').removeClass('hidden').html(cur_cart.length)
+    } else {
+      $('.cart-cont-num').addClass('hidden').html('')
+    }
+  }
 
+  function updateCartDOMElements() {
+    updateCartItemsCount();
+    renderCart();
+  }
 
   function formatFormData(data){
    
@@ -333,7 +336,6 @@ $(function() {
     code += boxType + months;
     delete_id = code;
 
-
     return [product, code, quantity];
 
   }
@@ -342,7 +344,6 @@ $(function() {
 
 
   function addToCart(cur_cart, new_element) {
-
 
     if (!cur_cart || cur_cart.length == 0) {
       cur_cart = [];
@@ -359,9 +360,6 @@ $(function() {
 
     for (var i in cur_cart){
 
-      // console.log(cur_cart[i][0] + "==" + new_element[0], cur_cart[i][0] == new_element[0] )
-      // console.log(cur_cart[i][1] + '==' + new_element[1], cur_cart[i][1] == new_element[1])
-
       if (cur_cart[i][0] == new_element[0] && cur_cart[i][1] == new_element[1]){
         var quantity = cur_cart[i][2] * 1 + new_element[2] * 1;
         cur_cart[i][2] = quantity;
@@ -372,24 +370,9 @@ $(function() {
 
     // if quantity was not increased - this is a new element, add it
     cur_cart.push(new_element);
- 
-
-   /* console.log('cur_cart');
-    console.log(cur_cart);*/
-
 
     return cur_cart;
-
   }
-
-
-
- console.log(localStorage.length);
-   var icon = localStorage.length;
-
-     
-    
-    
 
 
   // Событие добавления в корзину
@@ -400,34 +383,20 @@ $(function() {
 
     var new_element = formatFormData(formData);
 
-
     // забрать из localStorage что сейчас в корзине
     var cur_cart = localStorage.getObject('cart');
 
     var new_cart = addToCart(cur_cart, new_element);
 
-
      // сохранить в localStorage
     localStorage.setObject('cart', new_cart);
 
-    renderCart(new_cart);
-
-
+    updateCartDOMElements();
   });
 
 
-
-
-
-  //  document.addEventListener('DOMContentLoaded', ()=>{
-  
-
-
-  // [["fiction","p1gm1",26],["fiction","p1pm1",6],["fiction","p1pm6",5]]
-
-
-
-  function renderCart(cur_cart) {
+  function renderCart() {
+    var cur_cart = localStorage.getObject('cart');
 
     function getMonthsName(m){
       var length = m;
@@ -451,9 +420,6 @@ $(function() {
       return length
     }
 
-
-
-
     function getBoxType(b) {
       var boxtype = b;
 
@@ -470,25 +436,17 @@ $(function() {
     }
 
     function getProductInfo(product_type) {
-
       return data.boxes[product_type] || data.boxes['fiction'];
     }
 
     function getProductSubscription(product_type, subscription) {
       var product_info = getProductInfo(product_type);
-
-
       return product_info.subscriptions[subscription] || {}
     }
-
-
-
 
     function getLineHtml(rowData) {
 
       var product_info = getProductInfo(rowData[0]);
-
-      console.log(product_info);
 
       var product_subscription = getProductSubscription(rowData[0], rowData[1]);
 
@@ -512,7 +470,7 @@ $(function() {
           <td class="quantity">${quantity}</td>
           <td class="total">${total}</td>
           <td class="remove">
-            <button class="btn btn-link text-danger" id="" >X</button>
+            <button class="cart-item-remove-btn btn btn-link text-danger" data-box-id="${rowData[0]}" data-subs-id="${rowData[1]}" ><img src="img/icon_delete.png"></button>
           </td>
         </tr>
       `;
@@ -535,47 +493,49 @@ $(function() {
     <p>` + box_title + `</p> \
     <div class="user_choices"> \
     <p class="choice_name">Подписка:</p> \
-    <p>` + lenght + `</p> `;
 
 
 
 */
 
 
-   var cur_cart = localStorage.getObject('cart'); 
 
-   renderCart(cur_cart);
-
-    // вывод пользователю после обновления корзины
+  updateCartDOMElements();
 
 
-    $(window).bind('storage', function(tar) {
-      console.log("FIRE");
+  $(document).on('click', '.cart-item-remove-btn', function() {
+    var box_id = $(this).data('box-id');
+    var subs_id = $(this).data('subs-id');
+    var cur_cart = localStorage.getObject('cart');
 
-      //  if (tar.originalEvent.key == 'cart') {
-
-      //     // обновить список выведенной корзины
-      //     // формируем новый список в HTML
-      //     let new_cart_list = '';
-      //     $.each(tar.originalEvent.newValue, function(i, value) {
-      //       new_cart_list = createCart(i, value);           
-      //     });
-
-      //     // пихаем в список новый HTML
-      //     $('.cart_list_class').html( new_cart_list );
+    var new_cart = [];
+    for (var i in cur_cart) {
+      if ( cur_cart[i][0] != box_id || cur_cart[i][1] != subs_id  ) {
+        new_cart.push(cur_cart[i]);
+      }
+    }
+    localStorage.setObject('cart', new_cart);
+    updateCartDOMElements();
+  });
 
 
-        
 
-      //     // запрос новой итоговой цены
 
-      //    /* return $.post('https://domain.com/link-to-request', tar.originalEvent.newValue, msg => {
-      //        console.log(msg);
-      //        // вывод общей цены
-      //        return $('.total_price').html( msg.total_price );
-      //     });*/
-      //   }
-    });
+  $(window).bind('storage', function(tar) {
+    console.log("FIRE");
+
+    // updateCartDOMElements();
+
+
+    //     // запрос новой итоговой цены
+
+    //    /* return $.post('https://domain.com/link-to-request', tar.originalEvent.newValue, msg => {
+    //        console.log(msg);
+    //        // вывод общей цены
+    //        return $('.total_price').html( msg.total_price );
+    //     });*/
+    //   }
+  });
 
 
 

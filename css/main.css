@@ -114,6 +114,18 @@ a {
 }
 
 
+
+.cart-cont-num {
+	background-color: #fff;
+	display: inline;
+	color: #D0021B;
+	font-size: 18px;
+	position: fixed;
+	width: 22px;
+	font-weight: 500;
+
+}
+
 /*Side menu*/
 
 .side_menu {
