@@ -45,6 +45,7 @@ $(function() {
           "price":9600,
           "boxType":"gift"
         }
+<<<<<<< HEAD
       }
     },
     "mix":{  
@@ -253,6 +254,32 @@ $(function() {
       }
     }
   };
+     }
+   };
+
+
+  
+  function getProducts(success, failure){
+      //request the list of products from the "server"
+      const URL = "https://github.com/eppelas/getyourbook/blob/master/js/products.json";
+      fetch(URL, {
+          method: 'GET',
+          mode: 'cors'
+      })
+      //turns json to js method
+      .then(response=>response.json())
+      .then(success)
+      .then(showProducts)
+
+      .catch(failure);
+
+      .catch(err=>{
+          errorMessage(err.message);
+      });
+  };
+  
+
+>>>>>>> 18b26f7f04f57516388a34567cb0674b5cb84e4c
 
   // func
   Storage.prototype.setObject = function(key, value) {
