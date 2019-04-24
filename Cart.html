@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Get Your Book</title>
+  <meta charset="utf-8">
+  <title>Get Your Book</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/cart.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/cart.css">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  
-
-		
+  <script src="js/nav.js"></script>
 </head>
 
-<body id="cart_page" >
-	<header>
+
+
+
+<body id="main_page">
+  <header>
    <div class="menu"> 
     <img class="logo d-none d-sm-block" src="img/logo.png">
-    <un > <li><a href="index.html"> Главная </a></li> <li><a href="FAQ.html"> Доставка </a></li> <li><a href="FAQ.html"> Частые вопросы </a></li> <li><a href="AboutUs.html"> О нас </a></li> 
-        <li class="icon_cart">
-          <div style="display: inline-block;">
-            <a href="Cart.html" class="menu_cart"> 
+    <un > 
+      <li>
+        <a href="index.html"> 
+          Главная 
+        </a>
+      </li> 
+      <li>
+        <a href="FAQ.html#delivery"> 
+          Доставка 
+        </a>
+      </li> 
+      <li>
+        <a href="FAQ.html"> 
+          Частые вопросы 
+        </a>
+      </li> 
+      <li>
+        <a href="AboutUs.html"> 
+          О нас 
+        </a>
+      </li> 
+      <li class="icon_cart">
+          <div style="display: inline-block; position: relative;">
+            <a href="cart.html" class="menu_cart active"> 
               <div style="display: inline-block;" > 
                 <div class="cart-cont-num hidden">
                 </div> 
                 <img src="img/icon-cart.png" style="margin-top: -5px;" class="img_cart_normal"> 
                 <img src="img/icon_cart_red.png" class="img_cart_top">
-                Корзина 
+
+                Корзина
+                
               </div>  
             </a> 
             </div>
         </li> 
       </un> 
-    </div>
-	</header>
-
-
+   </div>
+  </header>
   <h1>Корзина</h1>
-
-
-<div class="container-fluid"> 
-
-
-
-
-
-
-
+  <div class="container-fluid"> 
 <div class="row justify-content-center">
     <table class="col-lg-8 ">
       <thead>
@@ -84,7 +99,7 @@
 
 
 <div class="row ">
-  <div class="col-3 offset-md-7 total_price_box">
+  <div class="col-md-3 offset-md-7 total_price_box">
     <p> Итого: </p> <p class="total_price"> </p>
     <div class="button_main" style="text-align: center; margin-top: 30px; "> 
               <a href="" id=""> 
@@ -93,105 +108,69 @@
             </div>
 </div>  
 
-
-
-	<footer class="footer">
-
-        
-
-        <h2 id="contacts"> Напишите нам! </h2>
-        <div class="row justify-content-center block_writetous"> 
-
-          <div class="col-6 p-0"> 
-            <div> +7 951 653 4669 / +7 904 336 3880 </div>
-            <div> getyourbook@yandex.ru </div>
-            <div class="icons_row"> 
-              <a href="https://www.facebook.com/getyourbook1/"><img src="img/fb.png"></a> <a href="http://vk.com/getyourbook"><img src="img/vk.png"></a> <a href="https://instagram.com/get_your_book"><img src="img/ig.png"></a> </div>
-          </div> 
+  <footer class="footer ">
+    <div class="container-fluid">
+      <h2 id="contacts"> Напишите нам! </h2>
+      <div class="row justify-content-center block_writetous "> 
+        <div class="col-6 p-0"> 
+          <div> 
+            +7 951 653 4669 / +7 904 336 3880 
+          </div>
+          <div> 
+            getyourbook@yandex.ru 
+          </div>
+          <div class="icons_row"> 
+            <a href="https://www.facebook.com/getyourbook1/" target="_blank">
+              <img src="img/fb.png">
+            </a> 
+            <a href="http://vk.com/getyourbook" target="_blank">
+              <img src="img/vk.png">
+            </a> 
+            <a href="https://instagram.com/get_your_book" target="_blank">
+              <img src="img/ig.png">            
+            </a> 
+          </div>
+        </div> 
+      </div>
+      
+      <div class="row green ">
+        <div class="col-6 col-md-4 p-0" style="margin-left: 30px;"> 
+          <un>
+            <li>
+              <a href="FAQ.html"> 
+                Частые вопросы 
+              </a>
+            </li> 
+            <li>
+              <a href="PastMonthsBoxes.html"> 
+                Коробочки прошлых месяцев 
+              </a>
+            </li> 
+          </un>
         </div>
-
-
-        <div class="row green">
-
-            <div class="col-6 col-md-4 p-0" style="margin-left: 30px;"> 
-                <un> <li><a href="FAQ.html"> Частые вопросы </a></li> <li><a href="PastMonthsBoxes.html"> Коробочки прошлых месяцев </a></li> </un>
-            </div>
-            
-            <div class="col-6 col-md-4 p-0"> 
-                <un> <li><a href="CorporatePresents.html"> Корпоративные подарки </a></li> <li><a href="Certificate.html"> Сертификат </a></li> </un>
-            </div>
-
+        <div class="col-6 col-md-4 p-0"> 
+          <un>
+            <li>
+              <a href="CorporatePresents.html"> 
+                Корпоративные подарки 
+              </a>
+            </li> 
+            <li>
+              <a href="Certificate.html"> 
+                Сертификат 
+              </a>
+            </li> 
+          </un>
         </div>
-
-
+      </div>
+    </div>   
   </footer>
+
+
 </div> 
 
 
 
-
-
-<!-- Modals -->
-
-
-
-<div class="modal fade" id="add_to_cart">
-  <div class="modal-dialog modal-dialog-" >
-
-
-    <div class="modal-content"">  
-        <div >
-          <button type="button" class="close" data-dismiss="modal" style="margin: 20px 20px 0 0;">&times;</button>
-        </div>
-        <div class="modal-body">
-          <div>
-           <h3 class="" style="padding-top: 0px;">Саморазвитие и мотивация</h3> 
-          </div>
-          <div class="container-fluid">            
-            <div class="row ">
-              <div class="col-lg-6 offset-3 p-0">
-                <form>
-                  <div class="form-group">
-                    <label for="FormSelectLength">Подписка</label>
-                    <select class="form-control" id="FormSelectLength">
-                      <option>1 месяц</option>
-                      <option>3 месяца</option>
-                      <option>6 месяцев</option>
-                    </select>
-
-                    <label for="FormSelectFilling" style="margin-top: 20px;">Наполнение</label>
-                    <select class="form-control" id="FormSelectFilling">
-                      <option>Стандарт</option>
-                      <option>Только книги</option>
-                    </select>
-
-
-                    <label for="FormSelectAmount" style="margin-top: 20px;">Количество</label>
-                      <select class="form-control" id="FormSelectAmount">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                      </select>
-                </form>
-                <div class="button_main" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
-                  <a href=" " >Добавить в корзину</a>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>            
 
 
 

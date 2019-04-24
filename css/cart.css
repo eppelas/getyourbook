@@ -13,6 +13,15 @@ table p{
 	background-color: #F7F7F7;
 }
 
+tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+tr:nth-child(even) {
+  background: #F7F7F7;
+}
+
+
 .product_name {
 	font-weight: 500;
 }

@@ -9,30 +9,31 @@
 	<link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="js/nav.js"></script>
- <!--  <script src="js/store.js"></script> -->
-
-		
 </head>
 
 
 
 
-<body id="main_page">
+<body>
 	<header>
    <div class="menu"> 
     <img class="logo d-none d-sm-block" src="img/logo.png">
     <un > 
       <li>
-        <a href="index.html" class="active"> 
+        <a href="index.html" class="active" style="color: #D0021B;"> 
           Главная 
         </a>
       </li> 
       <li>
-        <a href="FAQ.html"> 
+        <a href="FAQ.html#delivery"> 
           Доставка 
         </a>
       </li> 
@@ -47,16 +48,14 @@
         </a>
       </li> 
         <li class="icon_cart">
-          <div style="display: inline-block;">
+          <div style="display: inline-block; position: relative;">
             <a href="cart.html" class="menu_cart"> 
               <div style="display: inline-block;" > 
                 <div class="cart-cont-num hidden">
                 </div> 
                 <img src="img/icon-cart.png" style="margin-top: -5px;" class="img_cart_normal"> 
                 <img src="img/icon_cart_red.png" class="img_cart_top">
-
                 Корзина
-                
               </div>  
             </a> 
             </div>
@@ -65,7 +64,7 @@
    </div>
 	</header>
 
-    <nav class="side_menu">
+  <nav class="side_menu">
         <un> 
           <li>
             <a href="#boxes"> 
@@ -104,330 +103,321 @@
             </a>
           </li>
         </un>
-    </nav>
+  </nav>
 
-
-<section id="boxes" class="nav">
-    <div class="container-fluid">	  
+  <section id="boxes" class="nav">
+  </section>   
+  <div class="container-fluid">
 	   <div class="row block_main" >
 	  	  <div class="col-lg-12 p-0" id="header_main">
-          <img src="img/logo.png" style="margin-top: 17%;"> 
-            <p id="main_description_text"> Ежемесячная подписка на коробочки с книгами <br> и атмосферными подарками. 
-            </p>
+          <img src="img/logo.png"> 
+          <p id="main_description_text"> Ежемесячная подписка на коробочки с книгами <br> и атмосферными подарками. 
+          </p>
 	  	  </div>
-	   </div>	 
-</section>  
+	    </div>	 
 
 
-<div id="carouselControls" class="carousel slide " data-ride="carousel">
-  <div class="carousel-inner">
+      <div id="carouselIndicators" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner">
 
-    <div class="carousel-item active">
-      <div class="row justify-content-center">
-        <div class="d-none col-lg-5 d-flex flex-column justify-content-end">         
-            <div class="box_img">
-               <img src="img/mix.png" id="mix"> 
-            </div>
-            <div class="d-none d-sm-block button_additional">
-                <a href="">Коробочки прошлых месяцев</a>
-            </div>
-        </div>
-
-        <div class="d-none col-lg-4 d-flex flex-column justify-content-end"> 
-          <div>
-             <ol class="carousel-indicators">
-              <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselIndicators" data-slide-to="5"></li>
-            </ol>
-           </div>
-           <div id="box_description_anchor" class="box_description" >
-               <p>Коробочка для книжных меломанов. Здесь может оказаться любая тематика (кроме книг на английском), а вы наверняка, откроете для себя что-нибудь новенькое.</p>
-           </div>
-           <div class="box_name">
-               <p>Микс</p>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="d-none col-lg-5 d-flex flex-column justify-content-end">         
+                  <div class="box_img">
+                     <img src="img/mix.png" id="mix"> 
+                  </div>
+                  <div class="d-none d-sm-block button_additional">
+                      <a href="Boxes.html#mix_grid">Коробочки прошлых месяцев</a>
+                  </div>
               </div>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>900р.</p>
-              </div>
-           </div>
-           <div class="button_main">
-               <a href=" " id="buy_mix" data-toggle="modal" data-target="#modal_mix">Заказать</a>
-           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="carousel-item ">
-      <div class="row justify-content-center">
-        <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
-            <div class="box_img">
-               <img src="img/fiction.png" id="fiction"> 
+              <div class="d-none col-lg-4 d-flex flex-column justify-content-end"> 
+                <div>
+                   <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                  </ol>
+                 </div>
+                 <div id="box_description_anchor" class="box_description" >
+                     <p>Коробочка для книжных меломанов. Здесь может оказаться любая тематика (кроме книг на английском), а вы наверняка, откроете для себя что-нибудь новенькое.</p>
+                 </div>
+                 <div class="box_name">
+                     <p>Микс</p>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+                    </div>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>900р.</p>
+                    </div>
+                 </div>
+                 <div class="button_main">
+                     <a href=" " id="buy_mix" data-toggle="modal" data-target="#modal_mix">Заказать</a>
+                 </div>
+              </div>
             </div>
-            <div class="d-none d-sm-block button_additional">
-                <a href="">Коробочки прошлых месяцев</a>
-            </div>
-        </div>
+          </div>
 
-        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
-          <div>
-             <ol class="carousel-indicators">
-              <li data-target="#carouselIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselIndicators" data-slide-to="1" class="active"></li>
-              <li data-target="#carouselIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselIndicators" data-slide-to="5"></li>
-            </ol>
-           </div>
-           <div class="box_description">
-               <p>Она для тех, кто не прочь погрузиться в сотни разных миров, возникших в воображении как русских, так и иностранных авторов</p>
-           </div>
-           <div class="box_name">
-               <p>Художественная</p>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+          <div class="carousel-item ">
+            <div class="row justify-content-center">
+              <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
+                  <div class="box_img">
+                     <img src="img/fiction.png" id="fiction"> 
+                  </div>
+                  <div class="d-none d-sm-block button_additional">
+                      <a href="Boxes.html#fiction_grid">Коробочки прошлых месяцев</a>
+                  </div>
               </div>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>900р.</p>
-              </div>
-           </div>           <div class="button_main">
-               <a href=" " id="buy_fiction" data-toggle="modal" data-target="#modal_fiction">Заказать</a>
-           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="carousel-item ">
-      <div class="row justify-content-center">
-        <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
-            <div class="box_img">
-               <img src="img/non-fiction.png"> 
+              <div class="col-lg-4 d-flex flex-column justify-content-end"> 
+                <div>
+                   <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                  </ol>
+                 </div>
+                 <div class="box_description">
+                     <p>Она для тех, кто не прочь погрузиться в сотни разных миров, возникших в воображении как русских, так и иностранных авторов</p>
+                 </div>
+                 <div class="box_name">
+                     <p>Художественная</p>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+                    </div>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>900р.</p>
+                    </div>
+                 </div>           <div class="button_main">
+                     <a href=" " id="buy_fiction" data-toggle="modal" data-target="#modal_fiction">Заказать</a>
+                 </div>
+              </div>
             </div>
-            <div class="d-none d-sm-block button_additional">
-                <a href="">Коробочки прошлых месяцев</a>
-            </div>
-        </div>
+          </div>
 
-        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
-          <div>
-             <ol class="carousel-indicators">
-              <li data-target="#carouselIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselIndicators" data-slide-to="2" class="active"></li>
-              <li data-target="#carouselIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselIndicators" data-slide-to="5"></li>
-            </ol>
-           </div>
-           <div class="box_description">
-               <p>Коробочка для тех, кто хочет узнать больше об окружающем нас мире, выдающихся людях, открытиях и событиях. Будет чем блеснуть в разговоре с друзьями!</p>
-           </div>
-           <div class="box_name">
-               <p>Нон-фикшн</p>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+          <div class="carousel-item ">
+            <div class="row justify-content-center">
+              <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
+                  <div class="box_img">
+                     <img src="img/non-fiction.png"> 
+                  </div>
+                  <div class="d-none d-sm-block button_additional">
+                      <a href="Boxes.html#non-fiction_grid">Коробочки прошлых месяцев</a>
+                  </div>
               </div>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>900р.</p>
+
+              <div class="col-lg-4 d-flex flex-column justify-content-end"> 
+                <div>
+                   <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                  </ol>
+                 </div>
+                 <div class="box_description">
+                     <p>Коробочка для тех, кто хочет узнать больше об окружающем нас мире, выдающихся людях, открытиях и событиях. Будет чем блеснуть в разговоре с друзьями!</p>
+                 </div>
+                 <div class="box_name">
+                     <p>Нон-фикшн</p>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+                    </div>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>900р.</p>
+                    </div>
+                 </div>
+                 <div class="button_main">
+                     <a href=" " id="buy_non_fiction" data-toggle="modal" data-target="#modal_non_fiction">Заказать</a>
+                 </div>
+                </div>
               </div>
-           </div>
-           <div class="button_main">
-               <a href=" " id="buy_non_fiction" data-toggle="modal" data-target="#modal_non_fiction">Заказать</a>
-           </div>
+          </div>
+
+          <div class="carousel-item ">
+            <div class="row justify-content-center">
+              <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
+                  <div class="box_img">
+                     <img src="img/classic.png" id="classic"> 
+                  </div>
+                  <div class="d-none d-sm-block button_additional">
+                      <a href="Boxes.html">Коробочки прошлых месяцев</a>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 d-flex flex-column justify-content-end"> 
+                <div>
+                   <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="3" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                  </ol>
+                 </div>
+                 <div class="box_description" >
+                     <p>Классика - это совсем не скучно и очень разнообразно! Всегда актуальные произведения, от Набокова до Эдгара Алана По.</p>
+                 </div>
+                 <div class="box_name">
+                     <p>Классика</p>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+                    </div>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>900р.</p>
+                    </div>
+                 </div>
+                 <div class="button_main">
+                     <a href=" " id="buy_classic" data-toggle="modal" data-target="#modal_classic">Заказать</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item ">
+            <div class="row justify-content-center">
+              <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
+                  <div class="box_img">
+                     <img src="img/self-improvement.png" id="fiction"> 
+                  </div>
+                  <div class="d-none d-sm-block button_additional">
+                      <a href="Boxes.html#self-improvement_grid">Коробочки прошлых месяцев</a>
+                  </div>
+              </div>
+
+
+              <div class="col-lg-4 d-flex flex-column justify-content-end"> 
+
+                <div>
+                   <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="4" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                  </ol>
+                 </div>
+                 <div class="box_description">
+                     <p>Коробочка для тех, кому необходимо немножко мотивации для покорения новых вершин.</p>
+                 </div>
+                 <div class="box_name">
+                     <p>Саморазвитие и мотивация</p>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+                    </div>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>900р.</p>
+                    </div>
+                 </div>
+                 <div class="button_main">
+                     <a href=" " id="buy_self_improvement" data-toggle="modal" data-target="#modal_self_improvement">Заказать</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item ">
+            <div class="row justify-content-center">
+              <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
+                  <div class="box_img">
+                     <img src="img/english.png"> 
+                  </div>
+                  <div class="d-none d-sm-block button_additional">
+                      <a href="Boxes.html#english_grid">Коробочки прошлых месяцев</a>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 d-flex flex-column justify-content-end"> 
+                <div>
+                   <ol class="carousel-indicators ">
+                    <li data-target="#carouselIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="5" class="active"></li>
+                  </ol>
+                 </div>
+                 <div class="box_description">
+                     <p>Изучать иностранный язык по книгам приятно и полезно. В коробочке неадаптированная литература, которую мы подберем для вашего уровня.</p>
+                 </div>
+                 <div class="box_name">
+                     <p>English Box</p>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
+                    </div>
+                 </div>
+                 <div class="box_content_style ">
+                    <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
+                    </div> 
+                    <div class="box_price" style="display: inline-block"> <p>900р.</p>
+                    </div>
+                 </div>
+                 <div class="button_main">
+                     <a href=" " id="buy_english" data-toggle="modal" data-target="#modal_english">Заказать</a>
+                 </div>
+                </div>
+              </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующий</span>
+        </a>
+
+
           </div>
         </div>
-    </div>
-
-    <div class="carousel-item ">
-      <div class="row justify-content-center">
-        <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
-            <div class="box_img">
-               <img src="img/classic.png" id="classic"> 
-            </div>
-            <div class="d-none d-sm-block button_additional">
-                <a href="">Коробочки прошлых месяцев</a>
-            </div>
-        </div>
-
-        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
-          <div>
-             <ol class="carousel-indicators">
-              <li data-target="#carouselIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselIndicators" data-slide-to="3" class="active"></li>
-              <li data-target="#carouselIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselIndicators" data-slide-to="5"></li>
-            </ol>
-           </div>
-           <div class="box_description" >
-               <p>Классика - это совсем не скучно и очень разнообразно! Всегда актуальные произведения, от Набокова до Эдгара Алана По.</p>
-           </div>
-           <div class="box_name">
-               <p>Классика</p>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
-              </div>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>900р.</p>
-              </div>
-           </div>
-           <div class="button_main">
-               <a href=" " id="buy_classic" data-toggle="modal" data-target="#modal_classic">Заказать</a>
-           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item ">
-      <div class="row justify-content-center">
-        <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
-            <div class="box_img">
-               <img src="img/self-improvement.png" id="fiction"> 
-            </div>
-            <div class="d-none d-sm-block button_additional">
-                <a href="">Коробочки прошлых месяцев</a>
-            </div>
-        </div>
-
-
-        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
-
-          <div>
-             <ol class="carousel-indicators">
-              <li data-target="#carouselIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselIndicators" data-slide-to="4" class="active"></li>
-              <li data-target="#carouselIndicators" data-slide-to="5"></li>
-            </ol>
-           </div>
-           <div class="box_description">
-               <p>Коробочка для тех, кому необходимо немножко мотивации для покорения новых вершин.</p>
-           </div>
-           <div class="box_name">
-               <p>Саморазвитие и мотивация</p>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
-              </div>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>900р.</p>
-              </div>
-           </div>
-           <div class="button_main">
-               <a href=" " id="buy_self_improvement" data-toggle="modal" data-target="#modal_self_improvement">Заказать</a>
-           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item ">
-      <div class="row justify-content-center">
-        <div class="d-none col-lg-5 d-flex flex-column justify-content-end">
-            <div class="box_img">
-               <img src="img/english.png"> 
-            </div>
-            <div class="d-none d-sm-block button_additional">
-                <a href="">Коробочки прошлых месяцев</a>
-            </div>
-        </div>
-
-        <div class="col-lg-4 d-flex flex-column justify-content-end"> 
-          <div>
-             <ol class="carousel-indicators ">
-              <li data-target="#carouselIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselIndicators" data-slide-to="5" class="active"></li>
-            </ol>
-           </div>
-           <div class="box_description">
-               <p>Изучать иностранный язык по книгам приятно и полезно. В коробочке неадаптированная литература, которую мы подберем для вашего уровня.</p>
-           </div>
-           <div class="box_name">
-               <p>English Box</p>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_content.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>1 900р.</p>
-              </div>
-           </div>
-           <div class="box_content_style ">
-              <div style="display: inline-block"> <img src="img/icon_box_plain.png" style="height: 20px;"> 
-              </div> 
-              <div class="box_price" style="display: inline-block"> <p>900р.</p>
-              </div>
-           </div>
-           <div class="button_main">
-               <a href=" " id="buy_english" data-toggle="modal" data-target="#modal_english">Заказать</a>
-           </div>
-          </div>
-        </div>
-    </div>
-
-    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 
 
 
-  <!-- <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="img/arrow_left.png"></span>
-  </a>
-  <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"><img src="img/arrow_right.png"></span>
-  </a> -->
-
-    </div>
-  </div>
-
-
-</div>
 
 
 
@@ -438,7 +428,7 @@
 <section id="prices" class="nav">   
   <h1 > Стоимость </h1> </section> 
 
-      <div class="row block_prices justify-content-center">
+      <div class="row block_prices justify-content-center ">
 
           <div class="col-lg-3">
               <img src="img/2.png" class="months_books">
@@ -467,23 +457,33 @@
   <h1 >Как заказать?</h1> </section>  
 
 
-    <div class="row mobile_margin" >
-        <div class="col-lg-4 offset-lg-1">
+    <div class="row mobile_margin block_order justify-content-center" >
+        <div class="col-md-8 col-lg-3 offset-lg-1">
+            <div class="steps_image">
+              <img src="img/step_1.png">
+            </div> 
             <p class="step_number"> 1 </p> 
             <p>Выбирайте свой любимый книжный жанр и длительность подписки: 1, 3 или 6 месяцев.</p> 
         </div>
         <div class="col-lg-7">
         </div>
-        <div class="col-lg-4 offset-lg-4">
+        <div class="col-md-8 col-lg-3 offset-lg-4 step_2">
+          <div class="steps_image">
+              <img src="img/step_2.png">
+            </div> 
           <p class="step_number">2</p> 
           <p>Оформляйте заказ на сайте до 25-го числа каждого месяца.</p>
         </div>
         <div class="col-lg-4">
         </div>
 
-        <div class="col-lg-4 offset-lg-7">
+        <div class="col-md-8 col-lg-4 offset-lg-7 step_3">
+         
+          <div class="steps_image">
+              <img src="img/step_3.png" style="margin-left: -50px;">
+          </div> 
           <p class="step_number">3</p> 
-          <p style="margin-right: 20px;">Запасайтесь терпением и готовьтесь к приятному сюрпризу - все коробочки отправляются к своим читателям 28-го числа.</p>
+          <p >Запасайтесь терпением и готовьтесь к приятному сюрпризу - все коробочки отправляются к своим читателям 28-го числа.</p>
         </div>
         <div class="col-lg-1">
         </div> 
@@ -493,7 +493,7 @@
 <section id="reviews" class="nav">
   <h1 id="reviews">Отзывы</h1> </section>
       
-    <div class="row justify-content-center mobile_margin">
+    <div class="row justify-content-center mobile_margin ">
         <div class="col-md-5">
             <div class="review_name">
                 <div> <img src="img/review01.png"> </div> 
@@ -515,7 +515,7 @@
                 <div> <img src="img/review03.png"> </div>
                 <div> <p>Юлия</p> </div>
             </div>
-            <div class="review_body"> <p> Не знаю как у вас, а у меня начало последних нескольких месяцев ознаменовано походом в почтовое отделение за коробочкой от @get_your_book 😊 И каждый раз он сопровождается волнением и предвкушением-что же там внутри?) <br> Это не только четвертая коробочка по счету, но и четвертая по тематике. И каждый раз ее наполнение превосходит мои ожидания. Оля и Лена @get_your_book я не знаю как вам это удается, но еще не было ни одной книги, которая не заинтересовала бы меня. Хочется от всей души поблагодарить вас за ваш труд и за такие душевные коробочки с приятными подарочками, а также за частичку Питера) <br> P.S. Уже в ожидании следующей коробочки😊 </p>
+            <div class="review_body" style="margin-bottom: 50px;"> <p> Не знаю как у вас, а у меня начало последних нескольких месяцев ознаменовано походом в почтовое отделение за коробочкой от @get_your_book 😊 И каждый раз он сопровождается волнением и предвкушением-что же там внутри?) <br> Это не только четвертая коробочка по счету, но и четвертая по тематике. И каждый раз ее наполнение превосходит мои ожидания. Оля и Лена @get_your_book я не знаю как вам это удается, но еще не было ни одной книги, которая не заинтересовала бы меня. Хочется от всей души поблагодарить вас за ваш труд и за такие душевные коробочки с приятными подарочками, а также за частичку Питера) <br> P.S. Уже в ожидании следующей коробочки😊 </p>
             </div>
         </div>
         <div class="col-md-5">
@@ -555,11 +555,14 @@
               </label>
             </div>
           
-            <div class="button_main" style="text-align: center; margin-top: 30px; width: 100%;"> 
-              <a href="" id="contacts_send"> 
-                Отправить 
-              </a>
-            </div>
+
+            <section id="contacts" class="nav"> 
+              <div class="button_main" style="text-align: center; margin-top: 30px; width: 100%;"> 
+                <a href="" id="contacts_send"> 
+                  Отправить 
+                </a>
+              </div>
+            </section>              
 
          
         </div>
@@ -570,43 +573,72 @@
 
 
 
-<section id="contacts" class="nav">  
- </section>  
-		 
+   
 
-	<footer class="footer">
+</div>		
 
-    
+
+
+  <footer class="footer ">
+    <div class="container-fluid">
+      <h2 id="contacts"> Напишите нам! </h2>
+      <div class="row justify-content-center block_writetous "> 
+        <div class="col-6 p-0"> 
+          <div> 
+            +7 951 653 4669 / +7 904 336 3880 
+          </div>
+          <div> 
+            getyourbook@yandex.ru 
+          </div>
+          <div class="icons_row"> 
+            <a href="https://www.facebook.com/getyourbook1/" target="_blank">
+              <img src="img/fb.png">
+            </a> 
+            <a href="http://vk.com/getyourbook" target="_blank">
+              <img src="img/vk.png">
+            </a> 
+            <a href="https://instagram.com/get_your_book" target="_blank">
+              <img src="img/ig.png">            
+            </a> 
+          </div>
+        </div> 
+      </div>
+      
+      <div class="row green ">
+        <div class="col-6 col-md-4 p-0" style="margin-left: 30px;"> 
+          <un>
+            <li>
+              <a href="FAQ.html"> 
+                Частые вопросы 
+              </a>
+            </li> 
+            <li>
+              <a href="PastMonthsBoxes.html"> 
+                Коробочки прошлых месяцев 
+              </a>
+            </li> 
+          </un>
+        </div>
+        <div class="col-6 col-md-4 p-0"> 
+          <un>
+            <li>
+              <a href="CorporatePresents.html"> 
+                Корпоративные подарки 
+              </a>
+            </li> 
+            <li>
+              <a href="Certificate.html"> 
+                Сертификат 
+              </a>
+            </li> 
+          </un>
+        </div>
+      </div>
+    </div>   
+  </footer>
+
       
 
-
-        <div class="row justify-content-center block_writetous"> 
-      
-          <div class="col-6 p-0"> 
-            <h2 > Напишите нам! </h2>
-            <div> +7 951 653 4669 / +7 904 336 3880 </div>
-            <div> getyourbook@yandex.ru </div>
-            <div class="icons_row"> 
-              <a href="https://www.facebook.com/getyourbook1/"><img src="img/fb.png"></a> <a href="http://vk.com/getyourbook"><img src="img/vk.png"></a> <a href="https://instagram.com/get_your_book"><img src="img/ig.png"></a> </div>
-          </div> 
-        </div>
-
-
-
-        <div class="row green">
-
-            <div class="col-6 col-md-4 p-0" style="margin-left: 30px;"> 
-                <un> <li><a href="FAQ.html"> Частые вопросы </a></li> <li><a href="PastMonthsBoxes.html"> Коробочки прошлых месяцев </a></li> </un>
-            </div>
-            
-            <div class="col-6 col-md-4 p-0"> 
-                <un> <li><a href="CorporatePresents.html"> Корпоративные подарки </a></li> <li><a href="Certificate.html"> Сертификат </a></li> </un>
-            </div>
-
-        </div>
-	</footer>
-
- 
 
 </div> 
 
@@ -630,7 +662,7 @@
           </div>
           <div class="container-fluid">            
             <div class="row justify-content-center">
-              <div class="col-lg-6 p-0">
+              <div class="col-md-6 p-0">
                 <form>
                   <input type="hidden" name="product" value="mix">
                   <div class="form-group">
@@ -663,7 +695,7 @@
                 </form>
 
                 <div class="button_main add_to_cart_button" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
-                  <a  >Добавить в корзину</a>
+                  <a  data-dismiss="modal">Добавить в корзину</a>
                 </div>
               </div>
 
@@ -689,8 +721,8 @@
            <h3 class="" style="padding-top: 0px;">Художественная</h3> 
           </div>
           <div class="container-fluid">            
-            <div class="row ">
-              <div class="col-lg-6 offset-3 p-0">
+            <div class="row justify-content-center">
+              <div class="col-md-6 p-0">
                 <form>
                   <input type="hidden" name="product" value="fiction">
 
@@ -725,7 +757,7 @@
                        
                 </form>
                 <div class="button_main add_to_cart_button" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
-                  <a >Добавить в корзину</a>
+                  <a data-dismiss="modal">Добавить в корзину</a>
                 </div>
               </div>
              </div>  
@@ -747,8 +779,8 @@
            <h3 class="" style="padding-top: 0px;">Нон-фикшн</h3> 
           </div>
           <div class="container-fluid">            
-            <div class="row ">
-              <div class="col-lg-6 offset-3 p-0">
+            <div class="row justify-content-center">
+              <div class="col-md-6 p-0">
                 <form>
                   <input type="hidden" name="product" value="non-fiction">
 
@@ -783,7 +815,7 @@
                                           
                 </form>
                 <div class="button_main add_to_cart_button" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
-                  <a >Добавить в корзину</a>
+                  <a data-dismiss="modal">Добавить в корзину</a>
                 </div>
               </div>
              </div>  
@@ -805,8 +837,8 @@
            <h3 class="" style="padding-top: 0px;">Классика</h3> 
           </div>
           <div class="container-fluid">            
-            <div class="row ">
-              <div class="col-lg-6 offset-3 p-0">
+            <div class="row justify-content-center">
+              <div class="col-md-6 p-0">
                 <form>
                   <input type="hidden" name="product" value="classic">
 
@@ -841,7 +873,7 @@
                                         
                 </form>
                 <div class="button_main add_to_cart_button" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
-                  <a >Добавить в корзину</a>
+                  <a data-dismiss="modal">Добавить в корзину</a>
                 </div>
               </div>
               </div> 
@@ -863,8 +895,8 @@
            <h3 class="" style="padding-top: 0px;">Саморазвитие и мотивация</h3> 
           </div>
           <div class="container-fluid">            
-            <div class="row ">
-              <div class="col-lg-6 offset-3 p-0">
+            <div class="row justify-content-center">
+              <div class="col-md-6 p-0">
                 <form>
                   <input type="hidden" name="product" value="self-improvement">
 
@@ -899,7 +931,7 @@
                                           
                 </form>
                 <div class="button_main add_to_cart_button" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
-                  <a >Добавить в корзину</a>
+                  <a data-dismiss="modal">Добавить в корзину</a>
                 </div>
               </div>
               </div> 
@@ -922,8 +954,8 @@
            <h3 class="" style="padding-top: 0px;">English</h3> 
           </div>
           <div class="container-fluid">            
-            <div class="row ">
-              <div class="col-lg-6 offset-3 p-0">
+            <div class="row justify-content-center">
+              <div class="col-md-6 p-0">
                 <form>
                   <input type="hidden" name="product" value="english">
                   <div class="form-group">
@@ -956,7 +988,7 @@
                      
                 </form>
                 <div class="button_main add_to_cart_button" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
-                  <a >Добавить в корзину</a>
+                  <a data-dismiss="modal">Добавить в корзину</a>
                 </div>
               </div>
             </div>            
@@ -968,8 +1000,6 @@
 </div>  
 
             
-
-
 
 
   
