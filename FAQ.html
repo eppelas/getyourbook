@@ -1,86 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Get Your Book</title>
+  <meta charset="utf-8">
+  <title>Get Your Book</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
 
+  <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-		
+  <script src="js/nav.js"></script>
 </head>
 
-<body id="FAQ" >
-	<header>
+
+
+
+<body id="main_page">
+  <header>
    <div class="menu"> 
     <img class="logo d-none d-sm-block" src="img/logo.png">
-    <un > <li><a href="index.html"> Главная </a></li> <li><a href="FAQ.html"> Доставка </a></li> <li><a href="FAQ.html" class="active"> Частые вопросы </a></li> <li><a href="AboutUs.html"> О нас </a></li> 
+    <un > 
+      <li>
+        <a href="index.html"> 
+          Главная 
+        </a>
+      </li> 
+      <li>
+        <a href="FAQ.html#delivery" id="btn_delivery"> 
+          Доставка 
+        </a>
+      </li> 
+      <li>
+        <a href="FAQ.html" class="active"> 
+          Частые вопросы 
+        </a>
+      </li> 
+      <li>
+        <a href="AboutUs.html"> 
+          О нас 
+        </a>
+      </li> 
         <li class="icon_cart">
-          <div style="display: inline-block;">
-            <a href="Cart.html" class="menu_cart"> 
+          <div style="display: inline-block; position: relative;">
+            <a href="cart.html" class="menu_cart"> 
               <div style="display: inline-block;" > 
                 <div class="cart-cont-num hidden">
                 </div> 
                 <img src="img/icon-cart.png" style="margin-top: -5px;" class="img_cart_normal"> 
                 <img src="img/icon_cart_red.png" class="img_cart_top">
-                Корзина 
+
+                Корзина
+                
               </div>  
             </a> 
             </div>
         </li> 
       </un> 
-    </div>
-	</header>
+   </div>
+  </header>
 
 
 <div class="container-fluid">
-
-
-       <h1> Частые вопросы </h1>
-
-          <div class="row justify-content-center">
-
-
-<table class="table table-hover col-md-10 " style="max-width: 1100px;">
-
-<tbody>
-    <tr data-toggle="collapse" data-target="#faq_delivery" class="clickable">
+ <h1> Частые вопросы </h1>
+ <div class="row justify-content-center">
+  <table class="table table-hover col-md-10 " style="max-width: 1100px;">
+    <tbody>
+      <tr data-toggle="collapse" data-target="#faq_delivery" class="clickable delivery">
+          <td>
+            Какие есть варианты доставки?
+          </td>
+      </tr>
+      <tr>
         <td>
-          Какие есть варианты доставки?
-        </td>
-    </tr>
-    <tr>
-      <td>
-        <!-- <td colspan="3"> -->
             <div id="faq_delivery" class="collapse">
-              <p>     1. По Санкт - Петербургу:
+                <p>     1. По Санкт - Петербургу:
 
-          - Самовывоз (метро Черная Речка, пр. Большевиков, Чкаловская) - бесплатно
-          - Курьер в пределах КАД - 150 руб.
-          - Курьер по Лен. Области - 200 руб.
+            - Самовывоз (метро Черная Речка, пр. Большевиков, Чкаловская) - бесплатно
+            - Курьер в пределах КАД - 150 руб.
+            - Курьер по Лен. Области - 200 руб.
 
-          2. По России:
+            2. По России:
 
-          - Транспортные компании СДЭК или Boxberry до пункта выдачи - от 150 руб. до 500 руб. в зависимости от региона (калькулятор доставки посчитает точную стоимость при оформлении заказа). 
-          - Почта России - 250 руб. в любой город
+            - Транспортные компании СДЭК или Boxberry до пункта выдачи - от 150 руб. до 500 руб. в зависимости от региона (калькулятор доставки посчитает точную стоимость при оформлении заказа). 
+            - Почта России - 250 руб. в любой город
 
-          3. Другие страны:
+            3. Другие страны:
 
-          - Почта России от 1000 до 1500 руб., в зависимости от страны (калькулятор доставки посчитает точную стоимость при оформлении заказа).
-            </p>
+            - Почта России от 1000 до 1500 руб., в зависимости от страны (калькулятор доставки посчитает точную стоимость при оформлении заказа).
+              </p>
 
-            </div>
-        </td>
-    </tr>
+              </div>
+          </td>
+      </tr>
 
     <tr data-toggle="collapse" data-target="#faq_certain_book" class="clickable">
         <td>
@@ -193,41 +211,70 @@
 
 </div>
 
-<footer class="footer">
-
-        
-
-        <h2 id="contacts"> Напишите нам! </h2>
-
-        <div class="row justify-content-center block_writetous"> 
-
-          <div class="col-6 p-0"> 
-            <div> +7 951 653 4669 / +7 904 336 3880 </div>
-            <div> getyourbook@yandex.ru </div>
-            <div class="icons_row"> 
-              <a href="https://www.facebook.com/getyourbook1/"><img src="img/fb.png"></a> <a href="http://vk.com/getyourbook"><img src="img/vk.png"></a> <a href="https://instagram.com/get_your_book"><img src="img/ig.png"></a> </div>
-          </div> 
+  <footer class="footer ">
+    <div class="container-fluid">
+      <h2 id="contacts"> Напишите нам! </h2>
+      <div class="row justify-content-center block_writetous "> 
+        <div class="col-6 p-0"> 
+          <div> 
+            +7 951 653 4669 / +7 904 336 3880 
+          </div>
+          <div> 
+            getyourbook@yandex.ru 
+          </div>
+          <div class="icons_row"> 
+            <a href="https://www.facebook.com/getyourbook1/" target="_blank">
+              <img src="img/fb.png">
+            </a> 
+            <a href="http://vk.com/getyourbook" target="_blank">
+              <img src="img/vk.png">
+            </a> 
+            <a href="https://instagram.com/get_your_book" target="_blank">
+              <img src="img/ig.png">            
+            </a> 
+          </div>
+        </div> 
+      </div>
+      
+      <div class="row green ">
+        <div class="col-6 col-md-4 p-0" style="margin-left: 30px;"> 
+          <un>
+            <li>
+              <a href="FAQ.html"> 
+                Частые вопросы 
+              </a>
+            </li> 
+            <li>
+              <a href="PastMonthsBoxes.html"> 
+                Коробочки прошлых месяцев 
+              </a>
+            </li> 
+          </un>
         </div>
-
-
-        <div class="row green">
-
-            <div class="col-6 col-md-4 p-0" style="margin-left: 30px;"> 
-                <un> <li><a href="FAQ.html"> Частые вопросы </a></li> <li><a href="PastMonthsBoxes.html"> Коробочки прошлых месяцев </a></li> </un>
-            </div>
-            
-            <div class="col-6 col-md-4 p-0"> 
-                <un> <li><a href="CorporatePresents.html"> Корпоративные подарки </a></li> <li><a href="Certificate.html"> Сертификат </a></li> </un>
-            </div>
-
+        <div class="col-6 col-md-4 p-0"> 
+          <un>
+            <li>
+              <a href="CorporatePresents.html"> 
+                Корпоративные подарки 
+              </a>
+            </li> 
+            <li>
+              <a href="Certificate.html"> 
+                Сертификат 
+              </a>
+            </li> 
+          </un>
         </div>
-
-
+      </div>
+    </div>   
   </footer>
+
+
 </div>        
 
     <!-- scripts -->
  <script src="js/cart.js"></script>
+ <script type="text/javascript" src="js/delivery.js"></script>
 
 
 </body>
