@@ -1,260 +1,281 @@
 $(function() {
 
-  // settings
-  var url_to_get_total_price = 'https://domain.com/link-to-get-total';
-  var url_to_get_boxes = 'https://domain.com/link-to-get-boxes';
+  var data = {
+      
 
-  // def
-  var boxes = {
-    "fiction":{  
-      "name":"Художественная",
-      "subscriptions":{  
-        "p1pm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":900,
-          "boxType":"plain"
+     "boxes":{  
+        "fiction":{  
+           "name":"Художественная",
+           "subscriptions":{  
+              "p1pm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":900,
+                 "boxType":"plain"
+              },
+              "p1pm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":2550,
+                 "boxType":"plain"
+              },
+              "p1pm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":4800,
+                 "boxType":"plain"
+              },
+              "p1gm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":1900,
+                 "boxType":"gift"
+              },
+              "p1gm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":5250,
+                 "boxType":"gift"
+              },
+              "p1gm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":9600,
+                 "boxType":"gift"
+              }
+           }
         },
-        "p1pm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":2550,
-          "boxType":"plain"
+        "mix":{  
+           "name":"Микс",
+           "subscriptions":{  
+              "p1pm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":900,
+                 "boxType":"plain"
+              },
+              "p1pm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":2550,
+                 "boxType":"plain"
+              },
+              "p1pm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":4800,
+                 "boxType":"plain"
+              },
+              "p1gm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":1900,
+                 "boxType":"gift"
+              },
+              "p1gm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":5250,
+                 "boxType":"gift"
+              },
+              "p1gm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":9600,
+                 "boxType":"gift"
+              }
+           }
         },
-        "p1pm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":4800,
-          "boxType":"plain"
+        "classic":{  
+           "name":"Классика",
+           "subscriptions":{  
+              "p1pm1":{
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":900,
+                 "boxType":"plain"
+              },
+              "p1pm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":2550,
+                 "boxType":"plain"
+              },
+              "p1pm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":4800,
+                 "boxType":"plain"
+              },
+              "p1gm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":1900,
+                 "boxType":"gift"
+              },
+              "p1gm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":5250,
+                 "boxType":"gift"
+              },
+              "p1gm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":9600,
+                 "boxType":"gift"
+              }
+           }
         },
-        "p1gm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":1900,
-          "boxType":"gift"
+        "non-fiction":{  
+           "name":"Нон-фикшн",
+           "subscriptions":{  
+              "p1pm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":900,
+                 "boxType":"plain"
+              },
+              "p1pm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":2550,
+                 "boxType":"plain"
+              },
+              "p1pm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":4800,
+                 "boxType":"plain"
+              },
+              "p1gm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":1900,
+                 "boxType":"gift"
+              },
+              "p1gm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":5250,
+                 "boxType":"gift"
+              },
+              "p1gm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":9600,
+                 "boxType":"gift"
+              }
+           }
         },
-        "p1gm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":5250,
-          "boxType":"gift"
+        "english":{  
+           "name":"English Box",
+           "subscriptions":{  
+              "p1pm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":1000,
+                 "boxType":"plain"
+              },
+              "p1pm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":2850,
+                 "boxType":"plain"
+              },
+              "p1pm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":5400,
+                 "boxType":"plain"
+              },
+              "p1gm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":2000,
+                 "boxType":"gift"
+              },
+              "p1gm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":5550,
+                 "boxType":"gift"
+              },
+              "p1gm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":10200,
+                 "boxType":"gift"
+              }
+           }
         },
-        "p1gm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":9600,
-          "boxType":"gift"
+        "self-improvement":{  
+           "name":"Саморазвитие и мотивация",
+           "subscriptions":{  
+              "p1pm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":1000,
+                 "boxType":"plain"
+              },
+              "p1pm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":2850,
+                 "boxType":"plain"
+              },
+              "p1pm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":5400,
+                 "boxType":"plain"
+              },
+              "p1gm1":{  
+                 "name":"1 месяц",
+                 "months":1,
+                 "price":2000,
+                 "boxType":"gift"
+              },
+              "p1gm3":{  
+                 "name":"3 месяца",
+                 "months":3,
+                 "price":5550,
+                 "boxType":"gift"
+              },
+              "p1gm6":{  
+                 "name":"6 месяцев",
+                 "months":6,
+                 "price":10200,
+                 "boxType":"gift"
+              }
+           }
         }
-      }
-    },
-    "mix":{  
-      "name":"Микс",
-      "subscriptions":{  
-        "p1pm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":900,
-          "boxType":"plain"
-        },
-        "p1pm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":2550,
-          "boxType":"plain"
-        },
-        "p1pm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":4800,
-          "boxType":"plain"
-        },
-        "p1gm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":1900,
-          "boxType":"gift"
-        },
-        "p1gm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":5250,
-          "boxType":"gift"
-        },
-        "p1gm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":9600,
-          "boxType":"gift"
-        }
-      }
-    },
-    "classic":{  
-      "name":"Классика",
-      "subscriptions":{  
-        "p1pm1":{
-          "name":"1 месяц",
-          "months":1,
-          "price":900,
-          "boxType":"plain"
-        },
-        "p1pm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":2550,
-          "boxType":"plain"
-        },
-        "p1pm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":4800,
-          "boxType":"plain"
-        },
-        "p1gm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":1900,
-          "boxType":"gift"
-        },
-        "p1gm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":5250,
-          "boxType":"gift"
-        },
-        "p1gm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":9600,
-          "boxType":"gift"
-        }
-      }
-    },
-    "non-fiction":{  
-      "name":"Нон-фикшн",
-      "subscriptions":{  
-        "p1pm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":900,
-          "boxType":"plain"
-        },
-        "p1pm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":2550,
-          "boxType":"plain"
-        },
-        "p1pm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":4800,
-          "boxType":"plain"
-        },
-        "p1gm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":1900,
-          "boxType":"gift"
-        },
-        "p1gm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":5250,
-          "boxType":"gift"
-        },
-        "p1gm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":9600,
-          "boxType":"gift"
-        }
-      }
-    },
-    "english":{  
-      "name":"English Box",
-      "subscriptions":{  
-        "p1pm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":1000,
-          "boxType":"plain"
-        },
-        "p1pm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":2850,
-          "boxType":"plain"
-        },
-        "p1pm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":5400,
-          "boxType":"plain"
-        },
-        "p1gm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":2000,
-          "boxType":"gift"
-        },
-        "p1gm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":5550,
-          "boxType":"gift"
-        },
-        "p1gm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":10200,
-          "boxType":"gift"
-        }
-      }
-    },
-    "self-improvement":{  
-      "name":"Саморазвитие и мотивация",
-      "subscriptions":{  
-        "p1pm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":1000,
-          "boxType":"plain"
-        },
-        "p1pm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":2850,
-          "boxType":"plain"
-        },
-        "p1pm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":5400,
-          "boxType":"plain"
-        },
-        "p1gm1":{  
-          "name":"1 месяц",
-          "months":1,
-          "price":2000,
-          "boxType":"gift"
-        },
-        "p1gm3":{  
-          "name":"3 месяца",
-          "months":3,
-          "price":5550,
-          "boxType":"gift"
-        },
-        "p1gm6":{  
-          "name":"6 месяцев",
-          "months":6,
-          "price":10200,
-          "boxType":"gift"
-        }
-      }
-    }
-  };
+     }
+   };
 
-  // func
+
+/*  
+  function getProducts(success, failure){
+      //request the list of products from the "server"
+      const URL = "https://github.com/eppelas/getyourbook/blob/master/js/products.json";
+      fetch(URL, {
+          method: 'GET',
+          mode: 'cors'
+      })
+      //turns json to js method
+      .then(response=>response.json())
+      .then(success)
+      .then(showProducts)
+
+      .catch(failure);
+
+      .catch(err=>{
+          errorMessage(err.message);
+      });
+  };*/
+  
+
+
   Storage.prototype.setObject = function(key, value) {
       this.setItem(key, JSON.stringify(value));
   }
@@ -264,20 +285,6 @@ $(function() {
       return value && JSON.parse(value);
   }
 
-  function getBoxes() {
-    $.post(url_to_get_boxes, {}, msg => {
-
-      // {
-      //   'status': 'success' | 'error',
-      //   'boxes': {...}
-      // }
-
-      if ( msg.status == 'success') {
-        boxes = msg.boxes;
-        // localStorage.setObject('boxes', msg.boxes);
-      }
-    });
-  }
 
   function updateCartItemsCount() {
     var cur_cart = localStorage.getObject('cart');
@@ -291,12 +298,13 @@ $(function() {
   function updateCartDOMElements() {
     updateCartItemsCount();
     renderCart();
-    updateCartTotal();
   }
 
   function formatFormData(data){
    
     var code = 'p1'; //p1pm2 || p2jm6 etc. p1 wtf?, p - boxType, m6 - months
+
+
 
     var boxType = ''; //'p' || 'j'
     var months = 'm'; // m+number
@@ -308,6 +316,7 @@ $(function() {
     // "p1pm3"
 
     var icon = 0;
+
 
     for (var i in data) {
       if (data[i] && data[i].name == 'product') {
@@ -328,7 +337,11 @@ $(function() {
     delete_id = code;
 
     return [product, code, quantity];
+
   }
+
+
+
 
   function addToCart(cur_cart, new_element) {
 
@@ -361,9 +374,28 @@ $(function() {
     return cur_cart;
   }
 
-  function renderCart() {
-    if ( $('.cart-vals').length < 1 ) return;
 
+  // Событие добавления в корзину
+  $('.add_to_cart_button').click(function() {
+
+    var $form = $(this).parents('form');
+    var formData = $form.serializeArray();
+
+    var new_element = formatFormData(formData);
+
+    // забрать из localStorage что сейчас в корзине
+    var cur_cart = localStorage.getObject('cart');
+
+    var new_cart = addToCart(cur_cart, new_element);
+
+     // сохранить в localStorage
+    localStorage.setObject('cart', new_cart);
+
+    updateCartDOMElements();
+  });
+
+
+  function renderCart() {
     var cur_cart = localStorage.getObject('cart');
 
     function getMonthsName(m){
@@ -404,7 +436,7 @@ $(function() {
     }
 
     function getProductInfo(product_type) {
-      return boxes[product_type] || boxes['fiction'];
+      return data.boxes[product_type] || data.boxes['fiction'];
     }
 
     function getProductSubscription(product_type, subscription) {
@@ -455,39 +487,23 @@ $(function() {
     $('.cart-vals').html(cartHtml);
   }
 
-  function updateCartTotal() {
-    $total_price = $('.total_price');
-    if ( $total_price.length < 1 ) return;
 
-    $total_price.html('');
-    var cur_cart = localStorage.getObject('cart');
-    $.post(url_to_get_total_price, cur_cart, msg => {
 
-      // {
-      //   'status': 'success' | 'error',
-      //   'total_price': '1234,50'
-      // }
+/*`<p> Hello </p> \
+    <p>` + box_title + `</p> \
+    <div class="user_choices"> \
+    <p class="choice_name">Подписка:</p> \
 
-      if ( msg.status == 'success') {
-        $total_price.html( msg.total_price );
-      } else {
-        $total_price.html( 'Ошибка.' );
-      }
-    });
-  }
 
-  // list
-  $(document)
-  .on('click', '.add_to_cart_button', function() {
-    var $form = $(this).parents('form');
-    var formData = $form.serializeArray();
-    var new_element = formatFormData(formData);
-    var cur_cart = localStorage.getObject('cart');
-    var new_cart = addToCart(cur_cart, new_element);
-    localStorage.setObject('cart', new_cart);
-    updateCartDOMElements();
-  })
-  .on('click', '.cart-item-remove-btn', function() {
+
+*/
+
+
+
+  updateCartDOMElements();
+
+
+  $(document).on('click', '.cart-item-remove-btn', function() {
     var box_id = $(this).data('box-id');
     var subs_id = $(this).data('subs-id');
     var cur_cart = localStorage.getObject('cart');
@@ -502,14 +518,26 @@ $(function() {
     updateCartDOMElements();
   });
 
-  // $(window).bind('storage', function(tar) {
-  //   console.log("FIRE");
-  //   // updateCartDOMElements();
-  // });
 
-  // inint
-  getBoxes();
-  updateCartDOMElements();
+
+
+  $(window).bind('storage', function(tar) {
+    console.log("FIRE");
+
+    // updateCartDOMElements();
+
+
+    //     // запрос новой итоговой цены
+
+    //    /* return $.post('https://domain.com/link-to-request', tar.originalEvent.newValue, msg => {
+    //        console.log(msg);
+    //        // вывод общей цены
+    //        return $('.total_price').html( msg.total_price );
+    //     });*/
+    //   }
+  });
+
+
 
 });
 

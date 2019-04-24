@@ -1,51 +1,33 @@
-
-/*Mobile (Galaxy, Pixel, iPhone >= 6*/
-
 @media only screen and (max-width: 1000px) {
 	.side_menu {
 		display: none;
 	}
 
-
 	.menu {
 		    font-size: 13px;
 		    text-align: left;
 		    right: 0;
-		    padding: 0;
-		    background-color: rgba(255, 255, 255, 1);
-		    max-width: 100%;
+		     padding: 0;
+		    
 		}
 
 	.menu li {
 		padding-left: 7px;
 	}
 
-	#main_description_text {
-		line-height: 1.4;
-		margin-top: 35px;
-	}
 
-	#header_main img {
-		margin-top: 25%;
-	}
+	/*.menu img {
+		display: none;
+	}*/
 
 	.carousel-inner {
 	margin-top: -200px;
-	/*height: 910px;*/
+	height: 910px;
 	text-align: center;
 	}
 
-	.carousel-control-next {
-		top: 170px;
-	}
-
-	.carousel-control-prev {
-		
-		top: 170px;
-	}
-
 	#boxes {
-		text-align: center;
+		    text-align: center;
 	}
 	.box_img {
 		width: 100%;
@@ -53,22 +35,26 @@
 
 	.carousel-control-next{
 		right: 0;
-		height: 350px;
+		height: 50%;
 	}
 	.carousel-control-prev {
 		left: 0;
-		height: 350px;
+		height: 50%;
 	}
 
 	.carousel-control-next-icon img, .carousel-control-prev-icon img {
 		margin-top: 210px;
 	}
 
+	/*.carousel-indicators {
+		left: 0;
+		top: 0;
+	}*/
+
 	.box_description {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	}
-
+}
 	.box_name {
 		text-align: center;
 	}
@@ -83,30 +69,13 @@
 
 
 	h1 {
-		margin: 80px 0 40px 0;
-		font-size: 40px;
+		margin: 40px 0 25px 0;
+		    font-size: 40px;
 	}
 
 	.block_prices {
 		text-align: center;
 	}
-
-	.month_price {
-		margin-bottom: 90px !important;
-	}
-
-	/*block steps*/
-	
-	.step_2, .step_3 {
-	margin-top: 0;
-	}
-
-	.steps_image {
-		margin-left: 0;
-	}
-
-
-	/*footer*/
 
 	.green div {
 		margin-left: 0 !important;
@@ -118,8 +87,6 @@
 		margin-bottom: 0;
 	}
 
-	/*About Us Page*/
-
 	.block_about_picture {
 		background: none;
 	}
@@ -127,95 +94,21 @@
 	.mobile_margin {
 		margin: 0 1%;
 	}
-
-	.why_us_image img {
-		margin: 40px 0 10px 0;
-	}
-
-
-}
-
-
-/*Iphone 5*/
-
-@media only screen and (max-width: 360px) {
-	.img_cart_normal, .img_cart_top, .cart-cont-num {
-		display: none;
-	}
-
-	.menu li {
-		padding-left: 2px;
-	}
-
-	#header_main img {
-		margin-top: 25%;
-	}
-
-	.menu_cart:hover .img_cart_top {
-	display: none;
-	}
-
-	thead {
-		font-size: 13px;
-	}
-
-	.cart_price, .quantity, .total {
-		font-size: 14px;
-	}
-
-	.product_name {
-		font-size: 13px;
-		line-height: 1.4;
-	}
-
-	.choice_name, .user_choices {
-		line-height: 0.4;
-	}
-
-	.description {
-		padding: 30px 0 30px 20px !important;
-	}
-}
-
-
-/*iPad*/
-@media only screen and (min-width: 768px) and (max-width: 1000px)  {
-
-	.menu {
-		font-size: 17px;
-		text-align: right;
-		/*right: 2px;*/
-		padding-right: 42px;
-		background-color: rgba(255, 255, 255, 0.9);
-	}
-
-	.menu li {
-		display: inline;
-		padding-left: 20px;
-	}
-
 }
 
 
 
-@media only screen and (min-width: 1000px) and (max-width: 1999px) {
-	#header_main {
-		background-size: 84%;
-		height: 700px;
-	}
+
+
 
 
 
 /*and (max-width: 1400px)*/
 
-
-
-/*Desktop > 13'*/
-
 @media only screen and (min-width: 1200px)  {
 	#header_main {
-		background-size: 81%;
-		height: 700px;
+		background-size: contain;
+		height: 750px;
 	}
 
 	.carousel-inner {
@@ -224,32 +117,24 @@
 }
 
 
-@media only screen and (min-width: 1300px)  {
-	#header_main {
-		height: 750px;
-	}
-}
-
-
-@media only screen and (min-width: 1440px)  {
-	#header_main {
-		height: 800px;
-	}
-}
-
-
 @media only screen and (min-width: 1480px)  {
 	#header_main {
 		background-size: contain;
-		height: 86vh;
+		height: 83vh;
 	}
 
 	.carousel-inner {
-		margin-top: -20%;
+		margin-top: -15%;
 	}
 }
 
 
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+	#header_main {
+		background-size: 84%;
+		height: 700px;
+	}
 
 
 
