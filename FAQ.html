@@ -14,73 +14,88 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  
 
 		
 </head>
 
 <body id="FAQ" >
-	<header>
+  <header>
    <div class="menu"> 
     <img class="logo d-none d-sm-block" src="img/logo.png">
-    <un > <li><a href="index.html"> Главная </a></li> <li><a href="FAQ.html"> Доставка </a></li> <li><a href="FAQ.html" class="active"> Частые вопросы </a></li> <li><a href="AboutUs.html"> О нас </a></li> 
+    <un > 
+      <li>
+        <a href="index.html"> 
+          Главная 
+        </a>
+      </li> 
+      <li>
+        <a href="FAQ.html#delivery" id="btn_delivery"> 
+          Доставка 
+        </a>
+      </li> 
+      <li>
+        <a href="FAQ.html" class="active"> 
+          Частые вопросы 
+        </a>
+      </li> 
+      <li>
+        <a href="AboutUs.html"> 
+          О нас 
+        </a>
+      </li> 
         <li class="icon_cart">
           <div style="display: inline-block;">
-            <a href="Cart.html" class="menu_cart"> 
+            <a href="cart.html" class="menu_cart"> 
               <div style="display: inline-block;" > 
                 <div class="cart-cont-num hidden">
                 </div> 
                 <img src="img/icon-cart.png" style="margin-top: -5px;" class="img_cart_normal"> 
                 <img src="img/icon_cart_red.png" class="img_cart_top">
-                Корзина 
+
+                Корзина
+                
               </div>  
             </a> 
             </div>
         </li> 
       </un> 
-    </div>
-	</header>
+   </div>
+  </header>
 
 
 <div class="container-fluid">
-
-
-       <h1> Частые вопросы </h1>
-
-          <div class="row justify-content-center">
-
-
-<table class="table table-hover col-md-10 " style="max-width: 1100px;">
-
-<tbody>
-    <tr data-toggle="collapse" data-target="#faq_delivery" class="clickable">
+ <h1> Частые вопросы </h1>
+ <div class="row justify-content-center">
+  <table class="table table-hover col-md-10 " style="max-width: 1100px;">
+    <tbody>
+      <tr data-toggle="collapse" data-target="#faq_delivery" class="clickable delivery">
+          <td>
+            Какие есть варианты доставки?
+          </td>
+      </tr>
+      <tr>
         <td>
-          Какие есть варианты доставки?
-        </td>
-    </tr>
-    <tr>
-      <td>
-        <!-- <td colspan="3"> -->
             <div id="faq_delivery" class="collapse">
-              <p>     1. По Санкт - Петербургу:
+                <p>     1. По Санкт - Петербургу:
 
-          - Самовывоз (метро Черная Речка, пр. Большевиков, Чкаловская) - бесплатно
-          - Курьер в пределах КАД - 150 руб.
-          - Курьер по Лен. Области - 200 руб.
+            - Самовывоз (метро Черная Речка, пр. Большевиков, Чкаловская) - бесплатно
+            - Курьер в пределах КАД - 150 руб.
+            - Курьер по Лен. Области - 200 руб.
 
-          2. По России:
+            2. По России:
 
-          - Транспортные компании СДЭК или Boxberry до пункта выдачи - от 150 руб. до 500 руб. в зависимости от региона (калькулятор доставки посчитает точную стоимость при оформлении заказа). 
-          - Почта России - 250 руб. в любой город
+            - Транспортные компании СДЭК или Boxberry до пункта выдачи - от 150 руб. до 500 руб. в зависимости от региона (калькулятор доставки посчитает точную стоимость при оформлении заказа). 
+            - Почта России - 250 руб. в любой город
 
-          3. Другие страны:
+            3. Другие страны:
 
-          - Почта России от 1000 до 1500 руб., в зависимости от страны (калькулятор доставки посчитает точную стоимость при оформлении заказа).
-            </p>
+            - Почта России от 1000 до 1500 руб., в зависимости от страны (калькулятор доставки посчитает точную стоимость при оформлении заказа).
+              </p>
 
-            </div>
-        </td>
-    </tr>
+              </div>
+          </td>
+      </tr>
 
     <tr data-toggle="collapse" data-target="#faq_certain_book" class="clickable">
         <td>
@@ -228,6 +243,7 @@
 
     <!-- scripts -->
  <script src="js/cart.js"></script>
+ <script type="text/javascript" src="js/delivery.js"></script>
 
 
 </body>

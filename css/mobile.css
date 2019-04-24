@@ -7,8 +7,9 @@
 		    font-size: 13px;
 		    text-align: left;
 		    right: 0;
-		     padding: 0;
-		    
+		    padding: 0;
+		    background-color: rgba(255, 255, 255, 1);
+		    max-width: 100%;
 		}
 
 	.menu li {
@@ -16,18 +17,23 @@
 	}
 
 
-	/*.menu img {
-		display: none;
-	}*/
-
 	.carousel-inner {
 	margin-top: -200px;
-	height: 910px;
+	/*height: 910px;*/
 	text-align: center;
 	}
 
+	.carousel-control-next {
+		top: 170px;
+	}
+
+	.carousel-control-prev {
+		
+		top: 170px;
+	}
+
 	#boxes {
-		    text-align: center;
+		text-align: center;
 	}
 	.box_img {
 		width: 100%;
@@ -69,12 +75,16 @@
 
 
 	h1 {
-		margin: 40px 0 25px 0;
-		    font-size: 40px;
+		margin: 80px 0 40px 0;
+		font-size: 40px;
 	}
 
 	.block_prices {
 		text-align: center;
+	}
+
+	.month_price {
+		margin-bottom: 90px !important;
 	}
 
 	.green div {

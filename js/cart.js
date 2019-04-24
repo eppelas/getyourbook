@@ -254,7 +254,7 @@ $(function() {
    };
 
 
-/*  
+  
   function getProducts(success, failure){
       //request the list of products from the "server"
       const URL = "https://github.com/eppelas/getyourbook/blob/master/js/products.json";
@@ -272,7 +272,7 @@ $(function() {
       .catch(err=>{
           errorMessage(err.message);
       });
-  };*/
+  };
   
 
 
