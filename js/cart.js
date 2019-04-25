@@ -282,9 +282,9 @@ $(function() {
   function updateCartItemsCount() {
     var cur_cart = localStorage.getObject('cart');
     if ( cur_cart && cur_cart.length && cur_cart.length > 0 ) {
-      $('.cart-cont-num').removeClass('hidden').html(cur_cart.length)
+      $('.cart-cont-num').removeClass('quan_hidden').html(cur_cart.length)
     } else {
-      $('.cart-cont-num').addClass('hidden').html('')
+      $('.cart-cont-num').addClass('quan_hidden').html('')
     }
   }
 
