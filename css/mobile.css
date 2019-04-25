@@ -198,13 +198,23 @@
 
 
 
-@media only screen and (min-width: 1000px) and (max-width: 1999px) {
+@media only screen and (min-width: 1000px) {
 	#header_main {
 		background-size: 84%;
 		height: 700px;
+		font-size: 52px;
+	}
+	#main_description_text{
+		font-size: 32px;
+	}
+
+	#header_main img {
+	margin-top: 10%;
+	max-width: 220px;
 	}
 
 
+}
 
 /*and (max-width: 1400px)*/
 

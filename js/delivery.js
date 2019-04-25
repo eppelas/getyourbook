@@ -19,5 +19,17 @@ console.log(type);
 		$('.delivery').removeClass('collapsed');
 	} );
 
+
+
+	if (type == 'corporate') {
+		$('#faq_corporate').addClass('show');
+		$('.corporate').removeClass('collapsed');
+	};
+
+	if (type == 'sertificate') {
+		$('#faq_sertificate').addClass('show');
+		$('.sertificate').removeClass('collapsed');
+	};
+
 });
 

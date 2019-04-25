@@ -1,3 +1,8 @@
+.quan_hidden {
+	display: none !important;
+}
+
+
 body {
 
 	font-family: 'Roboto', sans-serif;
@@ -201,6 +206,7 @@ MAIN PAGE
 
 #header_main img {
 	margin-top: 14%;
+	max-width: 180px;
 }
 
 
@@ -397,7 +403,7 @@ font-size: 20px;
 
 
 .step_2, .step_3 {
-	margin-top: -180px;
+	margin-top: -220px;
 }
 
 .step_3 img {
@@ -416,6 +422,10 @@ font-size: 20px;
 	font-size: 24px;
 	line-height: 10px;
 
+}
+
+.block_order p {
+	    font-weight: 500;
 }
 
 
@@ -444,6 +454,7 @@ margin-left: 10px;
 
 .review_body {
 	margin-right: 20px;
+	font-size: 14px;
 }
 
 /*Write To Us Block*/
@@ -486,7 +497,7 @@ margin-left: 10px;
 	background-image: url(../img/mountains.png);
 	background-repeat: no-repeat; 
 	background-position: right bottom;
-	background-size: 95%;
+	background-size: 85%;
 	width: 100%;
 }
 
