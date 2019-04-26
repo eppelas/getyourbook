@@ -479,7 +479,7 @@
         'boxes': boxes
       }
 
-      $.post(url_to_get_total_price, cur_cart, msg => {
+      $.post(url_to_get_total_price, cur_cart, function(msg) {
         console.log(msg);
         if (!msg.error) {
           $total_price.html(msg.price);
