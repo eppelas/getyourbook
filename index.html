@@ -552,14 +552,14 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="PrivacyCheck">
               <label class="form-check-label" for="PrivacyCheck">
-                Согласие с пользовательским соглашением
+                Согласие с политикой конфиденциальности
               </label>
             </div>
           
 
             <section id="contacts" class="nav"> 
               <div class="button_main" style="text-align: center; margin-top: 30px; width: 100%;"> 
-                <a href="" id="contacts_send"> 
+                <a href="" id="contacts_send" data-toggle="modal" data-target="#modal_code"> 
                   Отправить 
                 </a>
               </div>
@@ -1000,6 +1000,30 @@
   </div>
 </div>  
 
+
+
+<div class="modal fade" id="modal_code">
+  <div class="modal-dialog modal-dialog-centered" > 
+    <div class="modal-content">  
+        <div >
+          <button type="button" class="close" data-dismiss="modal" style="margin: 20px 20px 0 0;">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">            
+            <div class="row justify-content-center">
+              <div class="col-md-6 p-0">
+                <p>Спасибо! Промокод отправлен на указанную вами почту. </p>
+             <!--    <div class="button_main add_to_cart_button" style="text-align: center; margin-top: 30px; margin-bottom: 40px">
+                  <a data-dismiss="modal">Закрыть</a>
+                </div> -->
+              </div>
+             </div>  
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>  
             
 
 
