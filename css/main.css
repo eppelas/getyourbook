@@ -587,7 +587,14 @@ About Us
 
 }
 
+.modal-big {
+	    max-width: 680px;
+}
 
+.modal-big .modal-body {
+	padding: 3.5rem 0 4.5rem 0;
+	    text-align: center;
+}
 
 
 /*********
